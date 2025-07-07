@@ -129,21 +129,25 @@
   min-width: 100%;
   height: 100%;
 }
-.seccion-informativa {
+.seccion-dos-columnas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.seccion-informativa > div {
-  flex: 1 1 300px;
+.columna-izquierda {
+  flex: 1 1 60%;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.columna-derecha {
+  flex: 1 1 35%;
   min-width: 280px;
-  max-width: 380px;
-  box-sizing: border-box;
 }
 
 .instagram-bloque {
@@ -153,3 +157,20 @@
   padding: 20px;
   text-align: center;
 }
+
+.boton-instagram {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background-color: #F2BF27;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton-instagram:hover {
+  background-color: #d9a819;
+}
+
