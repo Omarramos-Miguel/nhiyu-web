@@ -54,20 +54,21 @@ function Home() {
             className="carrusel-slider"
             style={{ transform: `translateX(-${indiceActual * 100}%)` }}
           >
-            {imagenes.map((imagen, i) => (
-              <img key={i} src={imagen} alt={`Imagen ${i + 1}`} />
-            ))}
-          </div>
-        </div>
-
-        <div className="indicadores">
-          {imagenes.map((_, index) => (
-            <span
-              key={index}
-              className={indiceActual === index ? 'punto activo' : 'punto'}
-              onClick={() => irAImagen(index)}
-            />
-          ))}
+            {imagenes.map((imagen, i) => {
+              const img = (
+                <img
+                  src={imagen}
+                  alt={`Imagen ${i + 1}`}
+                  className="carrusel-img"
+                />
+              );
+            
+              return (
+                <div key={i} className="slide-item">
+                  {i === 0 ? <Link to="/catalogo">{img}</Link> : img}
+                </div>
+              );
+            })}
         </div>
       </div>
 
