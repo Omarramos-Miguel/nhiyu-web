@@ -54,15 +54,24 @@ function Home() {
             className="carrusel-slider"
             style={{ transform: `translateX(-${indiceActual * 100}%)` }}
           >
-            {imagenes.map((imagen, i) => (
-              i === 0 ? (
-                <Link to="/catalogo" key={i}>
-                  <img src={imagen} alt={`Imagen ${i + 1}`} />
+            {imagenes.map((imagen, i) => {
+              const imgElement = (
+                <img
+                  key={i}
+                  src={imagen}
+                  alt={`Imagen ${i + 1}`}
+                  className="carrusel-img"
+                />
+              );
+            
+              return i === 0 ? (
+                <Link to="/catalogo" key={i} className="carrusel-link">
+                  {imgElement}
                 </Link>
               ) : (
-                <img key={i} src={imagen} alt={`Imagen ${i + 1}`} />
-              )
-            ))}
+                imgElement
+              );
+            })}
           </div>
         </div>
 
