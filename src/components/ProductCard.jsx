@@ -18,6 +18,9 @@ function ProductCard({ producto }) {
       <img
         src={imagenes[indiceImagen]}
         alt={`${producto.nombre} imagen ${indiceImagen + 1}`}
+        loading="lazy"
+        width="300" // puedes ajustar según tu diseño
+        height="300" // o usa aspect-ratio en CSS
       />
       {imagenes.length > 1 && (
         <div className="carousel-controls">
