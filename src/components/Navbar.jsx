@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../assets/logo-nhiyu.png'; // Ajusta el nombre si tu imagen es diferente
+import logo from '../assets/logo-nhiyu.webp'; // Ajusta el nombre si tu imagen es diferente
 import iconInicio from '../assets/icons/home.svg';
 import iconCatalogo from '../assets/icons/catalogo.webp';
 import iconContacto from '../assets/icons/contacto.webp';
