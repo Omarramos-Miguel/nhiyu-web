@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import InstagramFeed from '../components/InstagramFeed';
 import './Home.css';
 
 import imagen1 from '../assets/imagen1.webp';
@@ -109,6 +110,8 @@ function Home() {
           Lleva contigo <strong>“recuerdos con alma de mar”</strong>.
         </p>
       </div>
+      <InstagramFeed />
+
     </div>
   );
 }
