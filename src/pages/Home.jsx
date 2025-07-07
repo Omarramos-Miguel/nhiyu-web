@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import './Home.css';
 
-import imagen1 from '../assets/imagen1.webp';
-import imagen2 from '../assets/imagen2.webp';
-import imagen3 from '../assets/imagen3.webp';
-import logo from '../assets/logo-nhiyu.webp';
+import imagen1 from '../assets/imagen1.png';
+import imagen2 from '../assets/imagen2.png';
+import imagen3 from '../assets/imagen3.png';
+import logo from '../assets/logo-nhiyu.png';
 import whatsappLogo from '../assets/whatsapp-logo.svg'; // Agrega este logo en assets
 
 const imagenes = [imagen1, imagen2, imagen3];
@@ -54,24 +53,9 @@ function Home() {
             className="carrusel-slider"
             style={{ transform: `translateX(-${indiceActual * 100}%)` }}
           >
-            {imagenes.map((imagen, i) => {
-              const imgElement = (
-                <img
-                  key={i}
-                  src={imagen}
-                  alt={`Imagen ${i + 1}`}
-                  className="carrusel-img"
-                />
-              );
-            
-              return i === 0 ? (
-                <Link to="/catalogo" key={i} className="carrusel-link">
-                  {imgElement}
-                </Link>
-              ) : (
-                imgElement
-              );
-            })}
+            {imagenes.map((imagen, i) => (
+              <img key={i} src={imagen} alt={`Imagen ${i + 1}`} />
+            ))}
           </div>
         </div>
 
@@ -118,3 +102,4 @@ function Home() {
 }
 
 export default Home;
+
