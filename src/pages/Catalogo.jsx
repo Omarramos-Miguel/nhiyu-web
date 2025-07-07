@@ -16,9 +16,9 @@ import cajita2 from '../assets/cajita2.png';
 import servilletero1 from '../assets/servilletero1.png';
 import servilletero2 from '../assets/servilletero2.png';
 
-import alhajero1 from '../assets/Alhajero1.png';
-import alhajero2 from '../assets/Alhajero2.png';
-import alhajero3 from '../assets/Alhajero3.png';
+import alhajero1 from '../assets/alhajero1.png';
+import alhajero2 from '../assets/alhajero2.png';
+import alhajero3 from '../assets/alhajero3.png';
 
 import ajedrez1 from '../assets/ajedrez1.png';
 import ajedrez2 from '../assets/ajedrez2.png';
