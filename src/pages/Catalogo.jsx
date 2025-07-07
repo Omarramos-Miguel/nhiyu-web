@@ -3,31 +3,31 @@ import './Catalogo.css';
 import whatsappLogo from '../assets/whatsapp-logo.svg';
 
 // Importa las imágenes que usas
-import llavero1 from '../assets/llavero1.png';
-import llavero2 from '../assets/llavero2.png';
-import llavero3 from '../assets/llavero3.png';
-import llavero4 from '../assets/llavero4.png';
-import llavero5 from '../assets/llavero5.png';
-import llavero6 from '../assets/llavero6.png';
+import llavero1 from '../assets/llavero1.webp';
+import llavero2 from '../assets/llavero2.webp';
+import llavero3 from '../assets/llavero3.webp';
+import llavero4 from '../assets/llavero4.webp';
+import llavero5 from '../assets/llavero5.webp';
+import llavero6 from '../assets/llavero6.webp';
 
-import cajita1 from '../assets/cajita1.png';
-import cajita2 from '../assets/cajita2.png';
+import cajita1 from '../assets/cajita1.webp';
+import cajita2 from '../assets/cajita2.webp';
 
-import servilletero1 from '../assets/servilletero1.png';
-import servilletero2 from '../assets/servilletero2.png';
+import servilletero1 from '../assets/servilletero1.webp';
+import servilletero2 from '../assets/servilletero2.webp';
 
-import alhajero1 from '../assets/alhajero1.png';
-import alhajero2 from '../assets/alhajero2.png';
-import alhajero3 from '../assets/alhajero3.png';
+import alhajero1 from '../assets/alhajero1.webp';
+import alhajero2 from '../assets/alhajero2.webp';
+import alhajero3 from '../assets/alhajero3.webp';
 
-import ajedrez1 from '../assets/ajedrez1.png';
-import ajedrez2 from '../assets/ajedrez2.png';
+import ajedrez1 from '../assets/ajedrez1.webp';
+import ajedrez2 from '../assets/ajedrez2.webp';
 
-import nutria1 from '../assets/nutria1.png';
-import nutria2 from '../assets/nutria2.png';
+import nutria1 from '../assets/nutria1.webp';
+import nutria2 from '../assets/nutria2.webp';
 
-import iman1 from '../assets/iman1.png';
-import iman2 from '../assets/iman2.png';
+import iman1 from '../assets/iman1.webp';
+import iman2 from '../assets/iman2.webp';
 
 function Catalogo() {
   const productos = [
