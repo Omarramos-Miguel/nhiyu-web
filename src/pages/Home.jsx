@@ -55,9 +55,9 @@ function Home() {
           >
             {imagenes.map((imagen, i) => (
               i === 0 ? (
-                <a href="/catalogo" key={i}>
+                <Link to="/catalogo" key={i}>
                   <img src={imagen} alt={`Imagen ${i + 1}`} />
-                </a>
+                </Link>
               ) : (
                 <img key={i} src={imagen} alt={`Imagen ${i + 1}`} />
               )
