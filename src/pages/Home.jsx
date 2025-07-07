@@ -6,9 +6,7 @@ import imagen1 from '../assets/imagen1.webp';
 import imagen2 from '../assets/imagen2.webp';
 import imagen3 from '../assets/imagen3.webp';
 import logo from '../assets/logo-nhiyu.webp';
-import whatsappLogo from '../assets/whatsapp-logo.svg';
-
-import InstagramFeed from '../components/InstagramFeed';
+import whatsappLogo from '../assets/whatsapp-logo.svg'; // Agrega este logo en assets
 
 const imagenes = [imagen1, imagen2, imagen3];
 
@@ -63,20 +61,13 @@ function Home() {
         </div>
 
         <div className="indicadores">
-        {imagenes.map((imagen, i) => {
-              const img = (
-                <img
-                  src={imagen}
-                  alt={`Imagen ${i + 1}`}
-                  className="carrusel-img"
-                />
-              );
-              return (
-                <div key={i} className="slide-item">
-                  {i === 0 ? <Link to="/catalogo">{img}</Link> : img}
-                </div>
-              );
-            })}
+          {imagenes.map((_, index) => (
+            <span
+              key={index}
+              className={indiceActual === index ? 'punto activo' : 'punto'}
+              onClick={() => irAImagen(index)}
+            />
+          ))}
         </div>
       </div>
 
@@ -112,6 +103,3 @@ function Home() {
 }
 
 export default Home;
-
-
-
