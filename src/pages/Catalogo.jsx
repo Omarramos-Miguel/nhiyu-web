@@ -34,7 +34,7 @@ function Catalogo() {
     {
       id: 1,
       nombre: 'Llaveros de Huatulco',
-      descripcion: "Corte láser en MDF | 5 diseños únicos",
+      descripcion: "Corte láser en MDF",
       imagen: [llavero1, llavero2, llavero3, llavero4, llavero5, llavero6]
     },
     {
