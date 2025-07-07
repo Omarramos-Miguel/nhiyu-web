@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'MiFuente';
+  src: url('../assets/fonts/MiFuente.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.whatsapp-contacto {
+    background-color: #80BFB9;
+    color: #F2BF27;
+    text-align: center;
+    padding: 8px 0;
+    font-weight: bold;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+  
+  .whatsapp-contacto a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .whatsapp-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+.envoltura-carrusel {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Sigue usando aspect-ratio si quieres mantenerlo */
+  .carrusel-contenedor {
+    margin-top: 20px;
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carrusel-slider {
+    display: flex;
+    transition: transform 0.6s ease;
+    width: 100%;
+  }
+  
+  .carrusel-slider img {
+    min-width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  /* Indicadores fuera del contenedor */
+  .indicadores {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .punto {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .punto.activo {
+    background-color: #80BFB9;
+  }
+  .nosotros-contenedor {
+    font-family: "mifuente";
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nosotros-titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5C715E; /* Un tono compatible con #E4F2C4 */
+  }
+  .nosotros-logo {
+    width: 120px;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+  }
+  .cuadro-significado {
+    font-family: "mifuente";
+    background-color: #E4F2C4;
+    padding: 35px 25px;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  .nosotros-texto {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }

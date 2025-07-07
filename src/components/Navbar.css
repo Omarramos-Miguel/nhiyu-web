@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'MiFuente';
+  src: url('../assets/fonts/MiFuente.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.navbar {
+    background-color: #E4F2C4;
+    color: #ffffff;
+    font-family: 'MiFuente';
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 40px; /* ajusta según tu logo */
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-icon {
+    height: 30px;
+    width: 30px;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #80BFB9;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .nav-links li a:hover {
+    color: #f7d976;
+  }
+  

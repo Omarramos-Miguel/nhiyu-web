@@ -1,0 +1,17 @@
+.gracias-container {
+    padding: 3rem;
+    text-align: center;
+    background-color: #FAFDF3;
+    color: #4A6B48;
+    font-family: 'MiFuente', sans-serif;
+  }
+  
+  .gracias-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gracias-container p {
+    font-size: 1.2rem;
+  }
+  
