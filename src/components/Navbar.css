@@ -39,14 +39,15 @@
     height: 30px;
     width: 30px;
   }
-  .nav-links li a {
-    text-decoration: none;
-    color: #80BFB9;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+.nav-links li a {
+  text-decoration: none;
+  color: #80BFB9;
+  font-weight: 500;
+  font-size: 1.2rem; /* Tamaño de fuente aumentado */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
   
   .nav-links li a:hover {
     color: #f7d976;
