@@ -45,7 +45,7 @@ function Home() {
           Contáctanos por WhatsApp
         </a>
       </div>
-      <h1>Hola</h1>
+      <h1>Hola </h1>
       {/* Carrusel */}
       <div className="envoltura-carrusel">
         <div className="carrusel-contenedor">
