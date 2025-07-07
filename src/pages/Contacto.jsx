@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contacto.css';
-import logo from '../assets/logo-nhiyu.png'; // Ajusta el path según tu estructura
+import logo from '../assets/logo-nhiyu.webp'; // Ajusta el path según tu estructura
 
 const Contacto = () => {
   return (
