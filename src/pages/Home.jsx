@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Home.css';
 
-import imagen1 from '../assets/imagen1.png';
-import imagen2 from '../assets/imagen2.png';
-import imagen3 from '../assets/imagen3.png';
-import logo from '../assets/logo-nhiyu.png';
+import imagen1 from '../assets/imagen1.webp';
+import imagen2 from '../assets/imagen2.webp';
+import imagen3 from '../assets/imagen3.webp';
+import logo from '../assets/logo-nhiyu.webp';
 import whatsappLogo from '../assets/whatsapp-logo.svg'; // Agrega este logo en assets
 
 const imagenes = [imagen1, imagen2, imagen3];
