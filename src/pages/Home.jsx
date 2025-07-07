@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 import imagen1 from '../assets/imagen1.webp';
@@ -53,9 +54,20 @@ function Home() {
             className="carrusel-slider"
             style={{ transform: `translateX(-${indiceActual * 100}%)` }}
           >
-            {imagenes.map((imagen, i) => (
-              <img key={i} src={imagen} alt={`Imagen ${i + 1}`} />
-            ))}
+              {imagenes.map((imagen, i) => {
+                const img = (
+                  <img
+                    src={imagen}
+                    alt={`Imagen ${i + 1}`}
+                    className="carrusel-img"
+                  />
+                );
+                return (
+                  <div key={i} className="slide-item">
+                    {i === 0 ? <Link to="/catalogo">{img}</Link> : img}
+                  </div>
+                );
+              })}
           </div>
         </div>
 
