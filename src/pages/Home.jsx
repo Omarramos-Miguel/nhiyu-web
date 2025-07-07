@@ -54,7 +54,13 @@ function Home() {
             style={{ transform: `translateX(-${indiceActual * 100}%)` }}
           >
             {imagenes.map((imagen, i) => (
-              <img key={i} src={imagen} alt={`Imagen ${i + 1}`} />
+              i === 0 ? (
+                <a href="/catalogo" key={i}>
+                  <img src={imagen} alt={`Imagen ${i + 1}`} />
+                </a>
+              ) : (
+                <img key={i} src={imagen} alt={`Imagen ${i + 1}`} />
+              )
             ))}
           </div>
         </div>
