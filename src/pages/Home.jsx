@@ -8,7 +8,7 @@ import imagen3 from '../assets/imagen3.webp';
 import logo from '../assets/logo-nhiyu.webp';
 import whatsappLogo from '../assets/whatsapp-logo.svg';
 
-import InstagramFeed from '../components/InstagramFeed'; // Asegúrate de tener este archivo
+import InstagramFeed from '../components/InstagramFeed';
 
 const imagenes = [imagen1, imagen2, imagen3];
 
@@ -84,36 +84,48 @@ function Home() {
         </div>
       </div>
 
-      {/* Sección Nosotros + Significado + Instagram */}
-      <div className="seccion-informativa">
-        <div className="nosotros-contenedor">
-          <img src={logo} alt="Logo Nhiyu" className="nosotros-logo" />
-          <h2 className="nosotros-titulo">Sobre Nosotros</h2>
-          <p className="nosotros-texto">
-            <strong>Nhiyú</strong> nace en el corazón de <strong>Bahías de Huatulco</strong>, inspirado en el arte, la naturaleza y el cariño por los detalles.
-            Somos un pequeño taller dedicado a crear <strong>regalos personalizados y artesanales</strong>, pensados para momentos especiales, celebraciones o simplemente para regalar con el corazón.
-          </p>
-          <p className="nosotros-texto">
-            Cada pieza que hacemos —ya sea una caja de MDF, un llavero, una vela o un imán— lleva un pedacito de la costa oaxaqueña, un diseño único y el amor con el que trabajamos cada pedido.
-          </p>
-          <p className="nosotros-texto">
-            <strong>Creemos en el valor de lo hecho a mano, de lo local, de lo que cuenta una historia.</strong>
-            En Nhiyu personalizamos tus ideas, cuidamos cada detalle y entregamos con amor en todo <strong>Bahías de Huatulco</strong>.
-          </p>
+      {/* SECCIÓN IZQUIERDA Y DERECHA */}
+      <div className="seccion-dos-columnas">
+        <div className="columna-izquierda">
+          <div className="nosotros-contenedor">
+            <img src={logo} alt="Logo Nhiyu" className="nosotros-logo" />
+            <h2 className="nosotros-titulo">Sobre Nosotros</h2>
+            <p className="nosotros-texto">
+              <strong>Nhiyú</strong> nace en el corazón de <strong>Bahías de Huatulco</strong>, inspirado en el arte, la naturaleza y el cariño por los detalles.
+              Somos un pequeño taller dedicado a crear <strong>regalos personalizados y artesanales</strong>, pensados para momentos especiales, celebraciones o simplemente para regalar con el corazón.
+            </p>
+            <p className="nosotros-texto">
+              Cada pieza que hacemos —ya sea una caja de MDF, un llavero, una vela o un imán— lleva un pedacito de la costa oaxaqueña, un diseño único y el amor con el que trabajamos cada pedido.
+            </p>
+            <p className="nosotros-texto">
+              <strong>Creemos en el valor de lo hecho a mano, de lo local, de lo que cuenta una historia.</strong>
+              En Nhiyu personalizamos tus ideas, cuidamos cada detalle y entregamos con amor en todo <strong>Bahías de Huatulco</strong>.
+            </p>
+          </div>
+
+          <div className="cuadro-significado">
+            <h3 className="cuadro-titulo">¿Qué significa Nhiyú?</h3>
+            <p className="cuadro-texto">
+              Nhiyú, de la unión de <strong>Nhi</strong> ("mar") y <strong>Yoo</strong> ("hogar"), nace como un concepto que combina la inmensidad del océano con la calidez de un refugio.
+            </p>
+            <p className="cuadro-texto">
+              Lleva contigo <strong>“recuerdos con alma de mar”</strong>.
+            </p>
+          </div>
         </div>
 
-        <div className="cuadro-significado">
-          <h3 className="cuadro-titulo">¿Qué significa Nhiyú?</h3>
-          <p className="cuadro-texto">
-            Nhiyú, de la unión de <strong>Nhi</strong> ("mar") y <strong>Yoo</strong> ("hogar"), nace como un concepto que combina la inmensidad del océano con la calidez de un refugio.
-          </p>
-          <p className="cuadro-texto">
-            Lleva contigo <strong>“recuerdos con alma de mar”</strong>.
-          </p>
-        </div>
-
-        <div className="instagram-bloque">
-          <InstagramFeed />
+        <div className="columna-derecha">
+          <div className="instagram-bloque">
+            <InstagramFeed />
+            <a 
+              href="https://www.instagram.com/nhiyu_huatulco" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="boton-instagram"
+            >
+              Síguenos en @nhiyu_huatulco
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -121,5 +133,6 @@ function Home() {
 }
 
 export default Home;
+
 
 
