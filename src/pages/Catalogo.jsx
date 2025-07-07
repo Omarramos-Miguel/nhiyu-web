@@ -1,62 +1,86 @@
 import ProductCard from '../components/ProductCard';
 import './Catalogo.css';
-import whatsappLogo from '../assets/whatsapp-logo.svg'; // Agrega este logo en assets
+import whatsappLogo from '../assets/whatsapp-logo.svg';
+
+// Importa las imágenes que usas
+import llavero1 from '../assets/llavero1.png';
+import llavero2 from '../assets/llavero2.png';
+import llavero3 from '../assets/llavero3.png';
+import llavero4 from '../assets/llavero4.png';
+import llavero5 from '../assets/llavero5.png';
+import llavero6 from '../assets/llavero6.png';
+
+import cajita1 from '../assets/cajita1.png';
+import cajita2 from '../assets/cajita2.png';
+
+import servilletero1 from '../assets/servilletero1.png';
+import servilletero2 from '../assets/servilletero2.png';
+
+import alhajero1 from '../assets/Alhajero1.png';
+import alhajero2 from '../assets/Alhajero2.png';
+import alhajero3 from '../assets/Alhajero3.png';
+
+import ajedrez1 from '../assets/ajedrez1.png';
+import ajedrez2 from '../assets/ajedrez2.png';
+
+import nutria1 from '../assets/nutria1.png';
+import nutria2 from '../assets/nutria2.png';
+
+import iman1 from '../assets/iman1.png';
+import iman2 from '../assets/iman2.png';
 
 function Catalogo() {
-  // Aquí puedes reemplazar o ampliar tus productos reales
   const productos = [
     {
       id: 1,
       nombre: 'Llaveros de Huatulco',
       descripcion: "Corte láser en MDF | 5 diseños únicos",
-      imagen: ['/src/assets/llavero1.png', '/src/assets/llavero2.png', '/src/assets/llavero3.png', '/src/assets/llavero4.png', '/src/assets/llavero5.png', '/src/assets/llavero6.png']
+      imagen: [llavero1, llavero2, llavero3, llavero4, llavero5, llavero6]
     },
     {
       id: 2,
       nombre: 'Cajita Huatulco',
       descripcion: "Corte láser en MDF | 6x6cm",
-      imagen: ['/src/assets/cajita1.png', '/src/assets/cajita2.png'] // un solo imagen puede ser arreglo con 1 elemento
+      imagen: [cajita1, cajita2]
     },
     {
       id: 3,
       nombre: 'Servilletero Huatulco',
       descripcion: "Corte láser en MDF",
-      imagen: ['/src/assets/servilletero1.png', '/src/assets/servilletero2.png', ]
+      imagen: [servilletero1, servilletero2]
     },
     {
       id: 4,
       nombre: 'Alhajero Floral',
       descripcion: "Corte láser en MDF",
-      imagen: ['/src/assets/Alhajero1.png', '/src/assets/Alhajero2.png','/src/assets/Alhajero3.png']
+      imagen: [alhajero1, alhajero2, alhajero3]
     },
     {
       id: 5,
       nombre: 'Ajedrez del Mar',
       descripcion: "Corte láser en MDF",
-      imagen: ['/src/assets/ajedrez1.png', '/src/assets/ajedrez2.png', ]
-    },
-    {
-      id: 5,
-      nombre: 'Llavero Dúo Nutria',
-      descripcion: "Corte láser en MDF",
-      imagen: ['/src/assets/nutria1.png', '/src/assets/nutria2.png', ]
+      imagen: [ajedrez1, ajedrez2]
     },
     {
       id: 6,
+      nombre: 'Llavero Dúo Nutria',
+      descripcion: "Corte láser en MDF",
+      imagen: [nutria1, nutria2]
+    },
+    {
+      id: 7,
       nombre: 'Imán Huatulco',
       descripcion: "Corte láser en MDF",
-      imagen: ['/src/assets/iman1.png', '/src/assets/iman2.png', ]
+      imagen: [iman1, iman2]
     }
   ];
-  
 
   return (
-    
     <div className="catalogo">
-            <div className="whatsapp-contacto">
-        <a 
-          href="https://wa.link/3ga1vw" 
-          target="_blank" 
+      <div className="whatsapp-contacto">
+        <a
+          href="https://wa.link/3ga1vw"
+          target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-link"
           aria-label="Contáctanos por WhatsApp"
@@ -76,3 +100,4 @@ function Catalogo() {
 }
 
 export default Catalogo;
+
