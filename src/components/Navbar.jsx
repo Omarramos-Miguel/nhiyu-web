@@ -4,7 +4,7 @@ import logo from '../assets/logo-nhiyu.png'; // Ajusta el nombre si tu imagen es
 import iconInicio from '../assets/icons/home.svg';
 import iconCatalogo from '../assets/icons/catalogo.png';
 import iconContacto from '../assets/icons/contacto.png';
-
+ 
 function Navbar() {
   return (
     <nav className="navbar">
