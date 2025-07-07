@@ -16,7 +16,7 @@ function ProductCard({ producto }) {
 
   return (
     <div className="product-card">
-      <img src={imagenes[indiceImagen]} alt={`${producto.nombre} imagen ${indiceImagen + 1}`} />
+      <img src={producto.imagen[0]} alt={producto.nombre} />
       {imagenes.length > 1 && (
         <div className="carousel-controls">
           <button onClick={anteriorImagen} aria-label="Imagen anterior">&#8592;</button>
