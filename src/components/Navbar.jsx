@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/logo-nhiyu.webp';
 import instagramIcon from '../assets/icons/instagram.svg';
-import whatsappIcon from '../assets/icons/whatsapp.svg';
+import facebookIcon from '../assets/icons/facebook.svg';
 
 function Navbar() {
   const [menuAbierto, setMenuAbierto] = useState(false);
@@ -39,11 +39,11 @@ function Navbar() {
 
       {/* Redes sociales */}
       <div className="nav-socials">
-        <a href="https://www.instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/nhiyuhuatulco" target="_blank" rel="noopener noreferrer">
           <img src={instagramIcon} alt="Instagram" />
         </a>
-        <a href="https://wa.me/52XXXXXXXXXX" target="_blank" rel="noopener noreferrer">
-          <img src={whatsappIcon} alt="WhatsApp" />
+        <a href="https://www.facebook.com/profile.php?id=61577842755748" target="_blank" rel="noopener noreferrer">
+          <img src={facebookIcon} alt="facebook" />
         </a>
       </div>
     </nav>
