@@ -174,9 +174,9 @@
 
   .mobile-socials {
     display: flex;
-    gap: 0;
+    gap: 10px;
     margin-top: 15px;
-    padding: 10px;
+    padding: 0;
     justify-content: center;
   }
   .mobile-socials a {
