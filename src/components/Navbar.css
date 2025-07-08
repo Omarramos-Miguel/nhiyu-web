@@ -173,19 +173,22 @@
     display: none;
   }
 
-  /* Aquí quitamos margen y espacio alrededor de iconos en redes sociales móviles */
   .mobile-socials {
     display: flex;
-    gap: 0; /* sin espacio entre iconos */
+    gap: 0;
     margin-top: 15px;
+    padding: 0;
+    justify-content: center;
   }
   .mobile-socials a {
-    padding: 0; /* quitar padding si tiene */
+    padding: 0;
+    margin: 0;
   }
   .mobile-socials img {
-    margin: 0; /* quitar margen */
+    margin: 0;
     width: 28px;
     height: 28px;
+    display: block;
   }
 }
 
