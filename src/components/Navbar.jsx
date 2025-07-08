@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/logo-nhiyu.webp';
+import instagramIcon from '../assets/icons/instagram.svg';
+import whatsappIcon from '../assets/icons/whatsapp.svg';
 
 function Navbar() {
   const [menuAbierto, setMenuAbierto] = useState(false);
@@ -16,32 +18,32 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      {/* Logo a la izquierda */}
+      {/* Logo */}
       <div className="logo-container">
         <Link to="/" onClick={cerrarMenu}>
           <img src={logo} alt="Nhiyu Logo" className="logo-img" />
         </Link>
       </div>
 
-      {/* Botón hamburguesa para móviles */}
+      {/* Botón hamburguesa */}
       <div className="hamburger" onClick={toggleMenu}>
         ☰
       </div>
 
-      {/* Menú al centro */}
+      {/* Menú */}
       <ul className={`nav-links ${menuAbierto ? 'activo' : ''}`}>
         <li><Link to="/" onClick={cerrarMenu}>Inicio</Link></li>
         <li><Link to="/catalogo" onClick={cerrarMenu}>Catálogo</Link></li>
         <li><Link to="/contacto" onClick={cerrarMenu}>Contacto</Link></li>
       </ul>
 
-      {/* Redes sociales a la derecha */}
+      {/* Redes sociales */}
       <div className="nav-socials">
         <a href="https://www.instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer">
-          <img src="/icons/instagram.svg" alt="Instagram" />
+          <img src={instagramIcon} alt="Instagram" />
         </a>
         <a href="https://wa.me/52XXXXXXXXXX" target="_blank" rel="noopener noreferrer">
-          <img src="/icons/whatsapp.svg" alt="WhatsApp" />
+          <img src={whatsappIcon} alt="WhatsApp" />
         </a>
       </div>
     </nav>
@@ -49,4 +51,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
 
