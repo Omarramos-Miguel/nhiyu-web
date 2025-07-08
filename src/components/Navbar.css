@@ -1,50 +1,93 @@
-
 @font-face {
   font-family: 'MiFuente';
   src: url('../assets/fonts/MiFuente.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
+
 .navbar {
-    background-color: #E4F2C4;
-    color: #ffffff;
-    font-family: 'MiFuente';
-    padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #E4F2C4;
+  font-family: 'MiFuente';
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-img {
-    height: 40px; /* ajusta según tu logo */
-    width: auto;
-    margin-right: 10px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+/* Menu principal */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
 .nav-links li a {
   text-decoration: none;
   color: #80BFB9;
   font-weight: 500;
-  font-size: 1.2rem; /* Tamaño de fuente aumentado */
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
-  
-  .nav-links li a:hover {
-    color: #f7d976;
+
+.nav-links li a:hover {
+  color: #f7d976;
+}
+
+/* Redes sociales */
+.nav-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-socials img {
+  height: 24px;
+  width: 24px;
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+.nav-socials img:hover {
+  filter: brightness(1);
+}
+
+/* Hamburguesa (oculta en escritorio) */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #80BFB9;
+  cursor: pointer;
+}
+
+/* Responsive: móviles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #E4F2C4;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+    z-index: 999;
   }
+
+  .nav-links.activo {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
 
