@@ -49,7 +49,7 @@ function Navbar() {
 
       {/* Redes sociales visibles en escritorio */}
       <div className="nav-socials">
-        <a href="https://www.instagram.com/nhiyuhuatulco" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/nhiyu_huatulco/" target="_blank" rel="noopener noreferrer">
           <img src={instagramIcon} alt="Instagram" />
         </a>
         <a href="https://www.facebook.com/profile.php?id=61577842755748" target="_blank" rel="noopener noreferrer">
