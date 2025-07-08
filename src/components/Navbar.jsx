@@ -35,14 +35,16 @@ function Navbar() {
         <li><Link to="/" onClick={cerrarMenu}>Inicio</Link></li>
         <li><Link to="/catalogo" onClick={cerrarMenu}>Catálogo</Link></li>
         <li><Link to="/contacto" onClick={cerrarMenu}>Contacto</Link></li>
-        <li className="mobile-socials">
+
+        {/* Redes sociales móviles como div para evitar márgenes indeseados */}
+        <div className="mobile-socials">
           <a href="https://www.instagram.com/nhiyu_huatulco/" target="_blank" rel="noopener noreferrer">
             <img src={instagramIcon} alt="Instagram" />
           </a>
           <a href="https://www.facebook.com/profile.php?id=61577842755748" target="_blank" rel="noopener noreferrer">
             <img src={facebookIcon} alt="Facebook" />
           </a>
-        </li>
+        </div>
       </ul>
 
       <div className="nav-socials">
@@ -58,6 +60,7 @@ function Navbar() {
 }
 
 export default Navbar;
+
 
 
 
