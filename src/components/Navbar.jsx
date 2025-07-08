@@ -35,15 +35,25 @@ function Navbar() {
         <li><Link to="/" onClick={cerrarMenu}>Inicio</Link></li>
         <li><Link to="/catalogo" onClick={cerrarMenu}>Catálogo</Link></li>
         <li><Link to="/contacto" onClick={cerrarMenu}>Contacto</Link></li>
+
+        {/* Redes sociales visibles solo en móviles */}
+        <li className="mobile-socials">
+          <a href="https://www.instagram.com/nhiyuhuatulco" target="_blank" rel="noopener noreferrer">
+            <img src={instagramIcon} alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61577842755748" target="_blank" rel="noopener noreferrer">
+            <img src={facebookIcon} alt="Facebook" />
+          </a>
+        </li>
       </ul>
 
-      {/* Redes sociales */}
+      {/* Redes sociales visibles en escritorio */}
       <div className="nav-socials">
         <a href="https://www.instagram.com/nhiyuhuatulco" target="_blank" rel="noopener noreferrer">
           <img src={instagramIcon} alt="Instagram" />
         </a>
         <a href="https://www.facebook.com/profile.php?id=61577842755748" target="_blank" rel="noopener noreferrer">
-          <img src={facebookIcon} alt="facebook" />
+          <img src={facebookIcon} alt="Facebook" />
         </a>
       </div>
     </nav>
