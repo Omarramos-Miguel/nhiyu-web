@@ -135,6 +135,8 @@
     display: none;
     animation: slideDown 0.3s ease forwards;
     z-index: 999;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* sombra */
+    border-radius: 12px; /* bordes redondeados para mejor look */
   }
 
   .nav-links li {
@@ -170,8 +172,20 @@
     display: none;
   }
 
+  /* Aquí quitamos margen y espacio alrededor de iconos en redes sociales móviles */
   .mobile-socials {
     display: flex;
+    gap: 0; /* sin espacio entre iconos */
+    margin-top: 15px;
+  }
+  .mobile-socials a {
+    padding: 0; /* quitar padding si tiene */
+  }
+  .mobile-socials img {
+    margin: 0; /* quitar margen */
+    width: 28px;
+    height: 28px;
   }
 }
+
 
