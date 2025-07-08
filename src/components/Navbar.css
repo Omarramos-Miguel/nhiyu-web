@@ -124,7 +124,7 @@
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
-    margin-top: 70px; /* 👈 aumenta este valor para compensar la barra de WhatsApp */
+    top: 100px; /* 👈 aumenta este valor para compensar la barra de WhatsApp */
     left: 0;
     right: 0;
     background-color: #E4F2C4;
