@@ -34,11 +34,6 @@
     display: flex;
     gap: 20px;
   }
-  
-  .nav-icon {
-    height: 30px;
-    width: 30px;
-  }
 .nav-links li a {
   text-decoration: none;
   color: #80BFB9;
@@ -52,9 +47,4 @@
   .nav-links li a:hover {
     color: #f7d976;
   }
-  
-@media (max-width: 768px) {
-  .nav-icon {
-    display: none;
-  }
-}
+
