@@ -123,6 +123,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links {
+    border: 2px solid #F2BF27;
     position: absolute;
     top: 100px; /* 👈 aumenta este valor para compensar la barra de WhatsApp */
     left: 0;
