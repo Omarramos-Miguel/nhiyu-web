@@ -31,8 +31,8 @@ import iman2 from '../assets/iman2.webp';
 
 import marmota from '../assets/marmota.JPG';
 
-import altar1 from '../assets/Altar1.png' ;
-import altar2 from '../assets/Altar2.png' ;
+import altar1 from '../assets/Altar1.PNG' ;
+import altar2 from '../assets/Altar2.PNG' ;
 
 
 function Catalogo() {
