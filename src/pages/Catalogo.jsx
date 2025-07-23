@@ -97,7 +97,7 @@ function Catalogo() {
     <div className="catalogo">
       <div className="whatsapp-contacto">
         <a
-          href="https://wa.link/3ga1vw"
+          href="https://wa.me/message/PSTT4KMKVZCHG1"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-link"
