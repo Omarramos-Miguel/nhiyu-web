@@ -29,6 +29,8 @@ import nutria2 from '../assets/nutria2.webp';
 import iman1 from '../assets/iman1.webp';
 import iman2 from '../assets/iman2.webp';
 
+import marmota from '../assets/marmota.png';
+
 function Catalogo() {
   const productos = [
     {
