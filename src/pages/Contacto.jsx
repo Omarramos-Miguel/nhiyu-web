@@ -26,7 +26,7 @@ const Contacto = () => {
 
         <div className="contacto-info">
           <h2>También puedes escribirnos:</h2>
-          <p><strong>WhatsApp:</strong> <a href="https://wa.link/3ga1vw" target="_blank" rel="noreferrer">Enviar mensaje</a></p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/message/PSTT4KMKVZCHG1" target="_blank" rel="noreferrer">Enviar mensaje</a></p>
           <p><strong>Correo:</strong> nhiyuhuatulco@gmail.com</p>
           <p><strong>Ubicación:</strong> Bahías de Huatulco, Oaxaca</p>
         </div>
