@@ -89,7 +89,7 @@ function Catalogo() {
       id: 9,
       nombre: 'Imar Altar',
       descripcion: "Corte láser en MDF",
-      imagen: [Altar1, Altar2]
+      imagen: [altar1, altar2]
     }
   ];
 
