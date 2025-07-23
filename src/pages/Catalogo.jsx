@@ -29,7 +29,7 @@ import nutria2 from '../assets/nutria2.webp';
 import iman1 from '../assets/iman1.webp';
 import iman2 from '../assets/iman2.webp';
 
-import marmota from '../assets/marmota.png';
+import marmota from '../assets/marmota.JPG';
 
 function Catalogo() {
   const productos = [
@@ -74,6 +74,12 @@ function Catalogo() {
       nombre: 'Imán Huatulco',
       descripcion: "Corte láser en MDF",
       imagen: [iman1, iman2]
+    },
+    {
+      id: 8,
+      nombre: 'Llavero Marmota',
+      descripcion: "Corte láser en MDF",
+      imagen: [marmota]
     }
   ];
 
