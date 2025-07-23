@@ -84,7 +84,7 @@ function Catalogo() {
       nombre: 'Llavero Marmota',
       descripcion: "Corte láser en MDF",
       imagen: [marmota]
-    }
+    },
     {
       id: 9,
       nombre: 'Imar Altar',
