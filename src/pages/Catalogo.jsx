@@ -31,6 +31,10 @@ import iman2 from '../assets/iman2.webp';
 
 import marmota from '../assets/marmota.JPG';
 
+import altar1 from '../assets/Altar1.png' ;
+import altar2 from '../assets/Altar2.png' ;
+
+
 function Catalogo() {
   const productos = [
     {
@@ -80,6 +84,12 @@ function Catalogo() {
       nombre: 'Llavero Marmota',
       descripcion: "Corte láser en MDF",
       imagen: [marmota]
+    }
+    {
+      id: 9,
+      nombre: 'Imar Altar',
+      descripcion: "Corte láser en MDF",
+      imagen: [Altar1, Altar2]
     }
   ];
 
