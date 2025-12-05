@@ -177,4 +177,62 @@
   width: 100%;
   height: 100%;
 }
+/* === Sección Servicios === */
+.servicios-contenedor {
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 20px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.servicio-item {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.servicio-icono {
+  width: 85px;
+  height: auto;
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+
+.servicio-titulo {
+  font-family: 'Dongle';
+  font-size: 2.4rem;
+  color: #5C715E;
+  margin-bottom: 5px;
+}
+
+.servicio-descripcion {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.borde-centro {
+  border-left: 2px solid #D6D6D6;
+  border-right: 2px solid #D6D6D6;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .servicios-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .borde-centro {
+    border: none;
+    padding: 0;
+  }
+}
 
