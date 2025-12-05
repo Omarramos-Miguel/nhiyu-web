@@ -194,31 +194,31 @@
 .servicio-item {
   flex: 1;
   text-align: center;
-  padding: 0 5px;        /* Reduce espacios laterales */
+  padding: 0 5px;
 }
 
 .servicio-icono {
-  width: 130px;          /* Más pequeño y equilibrado */
+  width: 120px;        /* Más pequeño para evitar separación visual */
   height: auto;
   opacity: 0.9;
-  margin-bottom: 0px;    /* Elimina espacio debajo del icono */
+  margin: 0;           /* Sin márgenes */
+  padding: 0;          /* Sin padding */
 }
 
 .servicio-titulo {
   font-family: 'Dongle';
-  font-size: 2.2rem;     /* Un poco más compacto */
-  color: #00aa8c;
-  margin-top: 3px;       /* Acerca el título al icono */
-  margin-bottom: 2px;    /* Acerca la descripción */
+  font-size: 2rem;
+  color: #5C715E;
+  margin: -4px 0 0 0;  /* Se pega totalmente al icono */
+  line-height: 1;      /* Cierra el espacio interno */
 }
 
 .servicio-descripcion {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #444;
-  line-height: 1.2;      /* Texto más cerrado */
-  margin-top: 0px;
+  line-height: 1.1;    /* Más compacto */
+  margin: -2px 0 0 0;  /* Se pega al título */
 }
-
 
 .borde-centro {
   border-left: 2px solid #D6D6D6;
