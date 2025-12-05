@@ -183,7 +183,7 @@
   max-width: 1000px;
   background: #ffffff;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 40px 20px;
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
@@ -194,27 +194,31 @@
 .servicio-item {
   flex: 1;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 5px;        /* Reduce espacios laterales */
 }
 
 .servicio-icono {
-  width: 180px;
+  width: 130px;          /* Más pequeño y equilibrado */
   height: auto;
-  opacity: 0.85;
+  opacity: 0.9;
+  margin-bottom: 0px;    /* Elimina espacio debajo del icono */
 }
 
 .servicio-titulo {
   font-family: 'Dongle';
-  font-size: 2.4rem;
+  font-size: 2.2rem;     /* Un poco más compacto */
   color: #5C715E;
-  margin-bottom: 5px;
+  margin-top: 3px;       /* Acerca el título al icono */
+  margin-bottom: 2px;    /* Acerca la descripción */
 }
 
 .servicio-descripcion {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #444;
-  line-height: 1.4;
+  line-height: 1.2;      /* Texto más cerrado */
+  margin-top: 0px;
 }
+
 
 .borde-centro {
   border-left: 2px solid #D6D6D6;
