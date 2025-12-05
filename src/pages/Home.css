@@ -203,24 +203,23 @@
 
 
 .servicio-icono {
-  width: 140px; /* más equilibrado */
+  width: 140px;
   height: auto;
   opacity: 0.85;
-  margin-bottom: 8px; /* junta el icono con el título */
+  margin-bottom: 4px;   /* muy poco espacio entre icono y título */
 }
 
 .servicio-titulo {
   font-family: 'Dongle';
   font-size: 2.2rem;
   color: #00aa8c;
-  margin-bottom: 5px;
+  margin-bottom: 8px;   /* un poco más de espacio entre título y texto */
 }
-
 
 .servicio-descripcion {
   font-size: 1.05rem;
   color: #444;
-  line-height: 1.4;
+  line-height: 1.35;    /* más compacto */
 }
 .borde-centro {
   border-left: 2px solid #D6D6D6;
@@ -282,19 +281,18 @@
   }
 
   .servicio-icono {
-    width: 115px;   /* tamaño ideal en móvil */
-    margin: 0 auto 6px auto;
+    width: 120px;
+    margin-bottom: 4px;   /* igual, muy pegado */
   }
 
   .servicio-titulo {
-    font-size: 2rem;
-    margin-bottom: 4px;
+    margin-bottom: 8px;   /* pequeño espacio */
   }
 
   .servicio-descripcion {
-    font-size: 1rem;
     line-height: 1.35;
   }
+}
 
   /* Líneas horizontales en mobile */
   .borde-centro {
