@@ -80,9 +80,8 @@ function Home() {
             />
           ))}
         </div>
+        <h2 className="titulo-intermedio">Bienvenido a Nhiyú</h2>
       </div>
-{/* Título entre Carrusel y Nosotros */}
-<h2 className="titulo-intermedio">Nuestros Servicios</h2>
 
       {/* Sección Nosotros */}
       <div className="nosotros-contenedor">
