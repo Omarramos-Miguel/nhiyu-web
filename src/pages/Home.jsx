@@ -2,13 +2,17 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
+// Carrusel
 import imagen1 from '../assets/imagen1.png';
-import imagen2 from '../assets/imagen1.png';
-import imagen3 from '../assets/imagen1.png';
+import imagen2 from '../assets/imagen2.png';
+import imagen3 from '../assets/imagen3.png';
+
+// Servicios
 import impresion from '../assets/impresion.png';
 import grabado from '../assets/grabado.png';
 import souvenirs from '../assets/souvenirs.png';
 
+// Otros
 import logo from '../assets/logo.png';
 import whatsappLogo from '../assets/whatsapp-logo.png';
 
@@ -20,7 +24,7 @@ function Home() {
 
   const iniciarCarrusel = () => {
     intervaloRef.current = setInterval(() => {
-      setIndiceActual((prev) => (prev + 1) % imagenes.length);
+      setIndiceActual(prev => (prev + 1) % imagenes.length);
     }, 5000);
   };
 
@@ -37,14 +41,13 @@ function Home() {
 
   return (
     <div>
-      {/* Cuadro WhatsApp arriba */}
+      {/* WhatsApp superior */}
       <div className="whatsapp-contacto">
         <a 
-          href="https://wa.link/3ga1vw" 
-          target="_blank" 
+          href="https://wa.link/3ga1vw"
+          target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-link"
-          aria-label="Contáctanos por WhatsApp"
         >
           <img src={whatsappLogo} alt="WhatsApp" className="whatsapp-logo" />
           Contáctanos por WhatsApp
@@ -58,23 +61,21 @@ function Home() {
             className="carrusel-slider"
             style={{ transform: `translateX(-${indiceActual * 100}%)` }}
           >
-            {imagenes.map((imagen, i) => {
-              const img = (
-                <img
-                  src={imagen}
-                  alt={`Imagen ${i + 1}`}
-                  className="carrusel-img"
-                />
-              );
-              return (
-                <div key={i} className="slide-item">
-                  {i === 0 ? <Link to="/catalogo">{img}</Link> : img}
-                </div>
-              );
-            })}
+            {imagenes.map((img, i) => (
+              <div key={i} className="slide-item">
+                {i === 0 ? (
+                  <Link to="/catalogo">
+                    <img src={img} alt={`Imagen ${i + 1}`} className="carrusel-img" />
+                  </Link>
+                ) : (
+                  <img src={img} alt={`Imagen ${i + 1}`} className="carrusel-img" />
+                )}
+              </div>
+            ))}
           </div>
         </div>
 
+        {/* Indicadores */}
         <div className="indicadores">
           {imagenes.map((_, index) => (
             <span
@@ -84,61 +85,66 @@ function Home() {
             />
           ))}
         </div>
+
+        {/* Título */}
         <h2 className="titulo-intermedio">Nuestros servicios</h2>
-        {/* === Sección Servicios === */}
-            <div className="servicios-contenedor">
-              <div className="servicio-item">
-                <img src={impresion} alt="Servicio de impresión" />
-                <h3 className="servicio-titulo">Impresión 3D</h3>
-                <p className="servicio-descripcion">
-                  Piezas personalizadas, prototipos y productos decorativos.
-                </p>
-              </div>
-            
-              <div className="servicio-item borde-centro">
-                <img src={grabado} alt="Servicio de grabado" />
-                <h3 className="servicio-titulo">Grabado láser</h3>
-                <p className="servicio-descripcion">
-                  Personalización en madera, cuero, acero y más.
-                </p>
-              </div>
-            
-              <div className="servicio-item">
-                <img src={souvenirs} alt="Souvenirs personalizados" />
-                <h3 className="servicio-titulo">Souvenirs exclusivos</h3>
-                <p className="servicio-descripcion">
-                  Diseños propios listos para regalar o coleccionar.
-                </p>
-              </div>
-            </div>
 
+        {/* Servicios */}
+        <div className="servicios-contenedor">
+          <div className="servicio-item">
+            <img src={impresion} alt="Impresión 3D" />
+            <h3 className="servicio-titulo">Impresión 3D</h3>
+            <p className="servicio-descripcion">
+              Piezas personalizadas, prototipos y productos decorativos.
+            </p>
+          </div>
+
+          <div className="servicio-item borde-centro">
+            <img src={grabado} alt="Grabado láser" />
+            <h3 className="servicio-titulo">Grabado láser</h3>
+            <p className="servicio-descripcion">
+              Personalización en madera, cuero, acero y más.
+            </p>
+          </div>
+
+          <div className="servicio-item">
+            <img src={souvenirs} alt="Souvenirs personalizados" />
+            <h3 className="servicio-titulo">Souvenirs exclusivos</h3>
+            <p className="servicio-descripcion">
+              Diseños propios listos para regalar o coleccionar.
+            </p>
+          </div>
+        </div>
       </div>
 
-      {/* Sección Nosotros */}
+      {/* Nosotros */}
       <div className="nosotros-contenedor">
-        <img src={logo} alt="Logo Nhiyu" className="nosotros-logo" />
+        <img src={logo} alt="Logo Nhiyú" className="nosotros-logo" />
         <h2 className="nosotros-titulo">Sobre Nosotros</h2>
+
         <p className="nosotros-texto">
-          <strong>Nhiyú</strong> nace en el corazón de <strong>Bahías de Huatulco</strong>, inspirado en el arte, la naturaleza y el cariño por los detalles.
-          Somos un pequeño taller dedicado a crear <strong>regalos personalizados y artesanales</strong>, pensados para momentos especiales, celebraciones o simplemente para regalar con el corazón.
+          <strong>Nhiyú</strong> nace en el corazón de <strong>Bahías de Huatulco</strong>,
+          inspirado en el arte, la naturaleza y el cariño por los detalles.
         </p>
+
         <p className="nosotros-texto">
-          Cada pieza que hacemos —ya sea una caja de MDF, un llavero, una vela o un imán— lleva un pedacito de la costa oaxaqueña, un diseño único y el amor con el que trabajamos cada pedido.
+          Creamos regalos personalizados, llaveros, cajas de MDF y detalles únicos,
+          siempre cuidando cada paso del proceso.
         </p>
+
         <p className="nosotros-texto">
-          <strong>Creemos en el valor de lo hecho a mano, de lo local, de lo que cuenta una historia.</strong>
-          En Nhiyu personalizamos tus ideas, cuidamos cada detalle y entregamos con amor en todo <strong>Bahías de Huatulco</strong>.
+          <strong>Creemos en el valor de lo hecho con dedicación y en las historias que cada pieza puede contar.</strong>
         </p>
       </div>
 
-      {/* Cuadro de significado de Nhiyú */}
+      {/* Significado */}
       <div className="cuadro-significado">
         <h3 className="cuadro-titulo">¿Qué significa Nhiyú?</h3>
         <p className="cuadro-texto">
-          Nhiyú, de la unión de <strong>Nhi</strong> ("mar") y <strong>Yoo</strong> ("hogar"), nace como un concepto que combina la inmensidad del océano con la calidez de un refugio.
+          <strong>Nhi</strong> significa “mar”, y <strong>Yoo</strong> significa “hogar”.
         </p>
         <p className="cuadro-texto">
-          Lleva contigo <strong>“recuerdos con alma de mar”</strong>.
+          Llévate contigo “recuerdos con alma de mar”.
         </p>
       </div>
     </div>
@@ -146,3 +152,4 @@ function Home() {
 }
 
 export default Home;
+
