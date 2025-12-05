@@ -80,7 +80,7 @@ function Home() {
             />
           ))}
         </div>
-        <h2 className="titulo-intermedio">Bienvenido a Nhiyú</h2>
+        <h2 className="titulo-intermedio">Nuestros servicios</h2>
       </div>
 
       {/* Sección Nosotros */}
