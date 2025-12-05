@@ -51,7 +51,7 @@
   text-align: center;
 }
 
-/* Carrusel sin recorte */
+/* Carrusel */
 .carrusel-contenedor {
   margin-top: 20px;
   width: 100%;
@@ -66,26 +66,27 @@
   width: 100%; 
 }
 
-/* Imagen sin recorte */
 .carrusel-slider img {
   width: 100%;
   height: auto;
   object-fit: contain;
   display: block;
-  border-radius: 12px; /* Ajusta el valor si deseas más o menos redondeo */
+  border-radius: 12px;
 }
 
+/* Título intermedio */
 .titulo-intermedio {
   font-family: 'Dongle';
   font-size: 3rem;
   text-align: left;
-  margin-bottom: 5px;   /* antes 15px → menos espacio vertical */
-  margin-top: 25px;  
+  margin-bottom: 5px;
+  margin-top: 25px;
   color: #5C715E;
   width: 100%;
-  padding-left: 25px;  /* separa del borde izquierdo */
-  padding-right: 25px; /* separa del borde derecho */
+  padding-left: 25px;
+  padding-right: 25px;
 }
+
 /* Indicadores */
 .indicadores {
   margin-top: 12px;
@@ -177,18 +178,13 @@
   -ms-user-select: none;
 }
 
-.slide-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
 /* === Sección Servicios === */
 .servicios-contenedor {
   max-width: 1000px;
   background: #ffffff;
   border-radius: 20px;
-  padding: 25px 20px;   /* antes 40px → ahora 25px */
-  margin: 20px auto;    /* antes 30px → ahora 20px */
+  padding: 25px 20px;
+  margin: 20px auto;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -201,26 +197,26 @@
   padding: 10px;
 }
 
-
 .servicio-icono {
   width: 140px;
   height: auto;
   opacity: 0.85;
-  margin-bottom: 4px;   /* muy poco espacio entre icono y título */
+  margin-bottom: 4px;
 }
 
 .servicio-titulo {
   font-family: 'Dongle';
   font-size: 2.2rem;
   color: #00aa8c;
-  margin-bottom: 8px;   /* un poco más de espacio entre título y texto */
+  margin-bottom: 8px;
 }
 
 .servicio-descripcion {
   font-size: 1.05rem;
   color: #444;
-  line-height: 1.35;    /* más compacto */
+  line-height: 1.35;
 }
+
 .borde-centro {
   border-left: 2px solid #D6D6D6;
   border-right: 2px solid #D6D6D6;
@@ -228,9 +224,11 @@
   padding-right: 20px;
 }
 
-/* 📱=== Responsivo para pantallas pequeñas === */
+/* ============================= */
+/* 📱 RESPONSIVE 768px */
+/* ============================= */
 @media (max-width: 768px) {
-  /* Carrusel centrado con márgenes */
+
   .envoltura-carrusel {
     max-width: 100%;
     padding: 0 12px;
@@ -244,7 +242,6 @@
     border-radius: 14px;
   }
 
-  /* Título intermedio */
   .titulo-intermedio {
     font-size: 2.4rem;
     margin-top: 25px;
@@ -254,7 +251,6 @@
     text-align: left;
   }
 
-  /* Sección Nosotros */
   .nosotros-contenedor,
   .cuadro-significado {
     padding: 30px 18px;
@@ -266,13 +262,13 @@
     line-height: 1.55;
   }
 
-  /* === Servicios === */
+  /* Servicios */
   .servicios-contenedor {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 25px 18px;   /* margen para que no pegue a los lados */
-    gap: 10px;            /* menos espacio entre tarjetas */
+    padding: 25px 18px;
+    gap: 10px;
   }
 
   .servicio-item {
@@ -282,17 +278,16 @@
 
   .servicio-icono {
     width: 120px;
-    margin-bottom: 4px;   /* igual, muy pegado */
+    margin-bottom: 4px;
   }
 
   .servicio-titulo {
-    margin-bottom: 8px;   /* pequeño espacio */
+    margin-bottom: 8px;
   }
 
   .servicio-descripcion {
     line-height: 1.35;
   }
-}
 
   /* Líneas horizontales en mobile */
   .borde-centro {
@@ -303,5 +298,4 @@
     padding-bottom: 18px;
   }
 }
-
 
