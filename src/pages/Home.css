@@ -79,10 +79,12 @@
   font-family: 'Dongle';
   font-size: 3rem;
   text-align: left;
-  margin: 25px 0 10px;
+  margin-top: 40px;    /* separa el título del carrusel en PC */
+  margin-bottom: 15px;
   color: #5C715E;
   width: 100%;
-  padding-left: 0; /* en pantallas grandes */
+  padding-left: 25px;  /* separa del borde izquierdo */
+  padding-right: 25px; /* separa del borde derecho */
 }
 /* Indicadores */
 .indicadores {
@@ -242,9 +244,10 @@
   }
 
   .titulo-intermedio {
-    padding-left: 15px;   /* separa del borde izquierdo */
-    padding-right: 15px;  /* separa del borde derecho */
-    font-size: 2.5rem;    /* ligeramente más pequeño para móvil */
+    font-size: 2.6rem;
+    margin-top: 30px;      /* separa más del borde superior en phones */
+    padding-left: 20px;    /* evita que quede pegado al borde izquierdo */
+    padding-right: 20px;   /* evita que quede pegado al borde derecho */
   }
 }
 
