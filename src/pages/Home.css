@@ -60,11 +60,14 @@
   position: relative;
 }
 
-.carrusel-slider {
-  display: flex;
-  transition: transform 0.6s ease;
+.carrusel-slider img {
   width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 12px; /* Ajusta el valor si deseas más o menos redondeo */
 }
+
 
 /* Imagen sin recorte */
 .carrusel-slider img {
