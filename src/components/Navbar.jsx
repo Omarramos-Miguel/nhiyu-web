@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/logo.png';
 import instagramIcon from '../assets/icons/instagram.png';
-import facebookIcon from '../assets/icons/facebook.svg';
+import facebookIcon from '../assets/icons/facebook.png';
 
 function Navbar() {
   const [menuAbierto, setMenuAbierto] = useState(false);
