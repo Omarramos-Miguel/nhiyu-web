@@ -5,6 +5,10 @@ import './Home.css';
 import imagen1 from '../assets/imagen1.png';
 import imagen2 from '../assets/imagen1.png';
 import imagen3 from '../assets/imagen1.png';
+import impresion from '../assets/impresion.png';
+import grabado from '../assets/grabado.png';
+import souvenirs from '../assets/souvenirs.png';
+
 import logo from '../assets/logo.png';
 import whatsappLogo from '../assets/whatsapp-logo.png';
 
@@ -84,7 +88,7 @@ function Home() {
         {/* === Sección Servicios === */}
             <div className="servicios-contenedor">
               <div className="servicio-item">
-                <img src="/assets/impresion.png" alt="Impresión 3D" className="servicio-icono" />
+                <img src={impresion} alt="Servicio de impresión" />
                 <h3 className="servicio-titulo">Impresión 3D</h3>
                 <p className="servicio-descripcion">
                   Piezas personalizadas, prototipos y productos decorativos.
@@ -92,7 +96,7 @@ function Home() {
               </div>
             
               <div className="servicio-item borde-centro">
-                <img src="/assets/grabado.png" alt="Grabado láser" className="servicio-icono" />
+                <img src={grabado} alt="Servicio de grabado" />
                 <h3 className="servicio-titulo">Grabado láser</h3>
                 <p className="servicio-descripcion">
                   Personalización en madera, cuero, acero y más.
@@ -100,7 +104,7 @@ function Home() {
               </div>
             
               <div className="servicio-item">
-                <img src="/assets/souvenirs.png" alt="Souvenirs exclusivos" className="servicio-icono" />
+                <img src={souvenirs} alt="Souvenirs personalizados" />
                 <h3 className="servicio-titulo">Souvenirs exclusivos</h3>
                 <p className="servicio-descripcion">
                   Diseños propios listos para regalar o coleccionar.
