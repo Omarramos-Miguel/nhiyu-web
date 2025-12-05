@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'MiFuente';
+  font-family: 'dongle';
   src: url('../assets/fonts/dongle-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -7,7 +7,7 @@
 
 .navbar {
   background-color: #01AA8D;
-  font-family: 'MiFuente';
+  font-family: 'dongle';
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
