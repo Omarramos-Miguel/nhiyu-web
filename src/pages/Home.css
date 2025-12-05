@@ -79,8 +79,8 @@
   font-family: 'Dongle';
   font-size: 3rem;
   text-align: left;
-  margin-top: 40px;    /* separa el título del carrusel en PC */
-  margin-bottom: 15px;
+  margin-bottom: 5px;   /* antes 15px → menos espacio vertical */
+  margin-top: 25px;  
   color: #5C715E;
   width: 100%;
   padding-left: 25px;  /* separa del borde izquierdo */
@@ -187,8 +187,8 @@
   max-width: 1000px;
   background: #ffffff;
   border-radius: 20px;
-  padding: 40px 20px;
-  margin: 30px auto;
+  padding: 25px 20px;   /* antes 40px → ahora 25px */
+  margin: 20px auto;    /* antes 30px → ahora 20px */
   display: flex;
   justify-content: space-between;
   align-items: stretch;
