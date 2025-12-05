@@ -53,12 +53,11 @@
 .nav-socials img {
   height: 24px;
   width: 24px;
-  filter: brightness(0.7);
   transition: filter 0.3s ease;
 }
 
 .nav-socials img:hover {
-  filter: brightness(1);
+  filter: brightness(0.7);
 }
 
 /* HAMBURGUESA personalizada */
