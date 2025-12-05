@@ -235,10 +235,11 @@
     border: none;
     padding: 0;
   }
-}
+
   .titulo-intermedio {
     padding-left: 15px;   /* separa del borde izquierdo */
     padding-right: 15px;  /* separa del borde derecho */
     font-size: 2.5rem;    /* ligeramente más pequeño para móvil */
   }
 }
+
