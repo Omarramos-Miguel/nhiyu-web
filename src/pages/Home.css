@@ -191,39 +191,37 @@
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 20px;
 }
 
 .servicio-item {
   flex: 1;
   text-align: center;
-  padding: 0 5px;
+  padding: 10px;
 }
 
+
 .servicio-icono {
-  width: 120px;        /* Más pequeño para evitar separación visual */
+  width: 140px; /* más equilibrado */
   height: auto;
-  opacity: 0.9;
-  margin: 0;           /* Sin márgenes */
-  padding: 0;          /* Sin padding */
+  opacity: 0.85;
+  margin-bottom: 8px; /* junta el icono con el título */
 }
 
 .servicio-titulo {
   font-family: 'Dongle';
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #00aa8c;
-  margin: -4px 0 0 0;  /* Se pega totalmente al icono */
-  line-height: 1;      /* Cierra el espacio interno */
+  margin-bottom: 5px;
 }
+
 
 .servicio-descripcion {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: #444;
-  line-height: 1.1;    /* Más compacto */
-  margin: -2px 0 0 0;  /* Se pega al título */
+  line-height: 1.4;
 }
-
 .borde-centro {
   border-left: 2px solid #D6D6D6;
   border-right: 2px solid #D6D6D6;
@@ -235,14 +233,28 @@
 @media (max-width: 768px) {
   .servicios-contenedor {
     flex-direction: column;
+    align-items: center;        /* CENTRA TODO */
     text-align: center;
   }
 
-  .borde-centro {
-    border: none;
-    padding: 0;
+  .servicio-item {
+    width: 100%;
+    padding: 20px 10px;
   }
 
+  /* Líneas horizontales cuando la vista es vertical */
+  .borde-centro {
+    border: none;               /* quita líneas laterales */
+    border-top: 2px solid #D6D6D6;
+    border-bottom: 2px solid #D6D6D6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .servicio-icono {
+    width: 120px; /* más pequeño y centrado */
+    margin: 0 auto 8px auto;
+  }
   .titulo-intermedio {
     font-size: 2.6rem;
     margin-top: 30px;      /* separa más del borde superior en phones */
