@@ -231,13 +231,6 @@
 
 /* 📱=== Responsivo para pantallas pequeñas === */
 @media (max-width: 768px) {
-  
-  /* Margen general para que nada pegue a los bordes */
-  body {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
   /* Carrusel centrado con márgenes */
   .envoltura-carrusel {
     max-width: 100%;
