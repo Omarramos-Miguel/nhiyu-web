@@ -46,7 +46,7 @@
 
 /* Contenedor principal del carrusel */
 .envoltura-carrusel {
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
   text-align: center;
 }
@@ -208,7 +208,7 @@
 .servicio-titulo {
   font-family: 'Dongle';
   font-size: 2rem;
-  color: #5C715E;
+  color: #00aa8c;
   margin: -4px 0 0 0;  /* Se pega totalmente al icono */
   line-height: 1;      /* Cierra el espacio interno */
 }
