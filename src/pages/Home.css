@@ -73,7 +73,14 @@
   object-fit: contain;
   display: block;
 }
-
+.titulo-intermedio {
+  font-family: 'Dongle';
+  font-size: 3rem;
+  text-align: left;       /* ⬅️ Para que inicie donde inicia la imagen */
+  margin: 25px 0 10px;
+  color: #5C715E;
+  width: 100%;
+}
 /* Indicadores */
 .indicadores {
   margin-top: 12px;
