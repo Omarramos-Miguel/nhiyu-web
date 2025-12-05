@@ -1,10 +1,9 @@
 @font-face {
   font-family: 'MiFuente';
-  src: url('../assets/fonts/MiFuente.otf') format('opentype');
+  src: url('../assets/fonts/dongle-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 .navbar {
   background-color: #01AA8D;
   font-family: 'MiFuente';
