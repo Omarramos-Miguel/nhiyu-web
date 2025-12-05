@@ -4,8 +4,8 @@ import './Home.css';
 
 // Carrusel
 import imagen1 from '../assets/imagen1.png';
-import imagen2 from '../assets/imagen2.png';
-import imagen3 from '../assets/imagen3.png';
+import imagen2 from '../assets/imagen1.png';
+import imagen3 from '../assets/imagen1.png';
 
 // Servicios
 import impresion from '../assets/impresion.png';
