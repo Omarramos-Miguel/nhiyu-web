@@ -89,32 +89,32 @@ function Home() {
         {/* Título */}
         <h2 className="titulo-intermedio">Nuestros servicios</h2>
 
-        {/* Servicios */}
-        <div className="servicios-contenedor">
-          <div className="servicio-item">
-            <img src={impresion} alt="Impresión 3D" />
-            <h3 className="servicio-titulo">Impresión 3D</h3>
-            <p className="servicio-descripcion">
-              Piezas personalizadas, prototipos y productos decorativos.
-            </p>
+          <div className="servicios-contenedor">
+            <div className="servicio-item">
+              <img src={impresion} alt="Servicio de impresión" className="servicio-icono" />
+              <h3 className="servicio-titulo">Impresión 3D</h3>
+              <p className="servicio-descripcion">
+                Piezas personalizadas, prototipos y productos decorativos.
+              </p>
+            </div>
+          
+            <div className="servicio-item borde-centro">
+              <img src={grabado} alt="Servicio de grabado" className="servicio-icono" />
+              <h3 className="servicio-titulo">Grabado láser</h3>
+              <p className="servicio-descripcion">
+                Personalización en madera, cuero, acero y más.
+              </p>
+            </div>
+          
+            <div className="servicio-item">
+              <img src={souvenirs} alt="Souvenirs personalizados" className="servicio-icono" />
+              <h3 className="servicio-titulo">Souvenirs exclusivos</h3>
+              <p className="servicio-descripcion">
+                Diseños propios listos para regalar o coleccionar.
+              </p>
+            </div>
           </div>
 
-          <div className="servicio-item borde-centro">
-            <img src={grabado} alt="Grabado láser" />
-            <h3 className="servicio-titulo">Grabado láser</h3>
-            <p className="servicio-descripcion">
-              Personalización en madera, cuero, acero y más.
-            </p>
-          </div>
-
-          <div className="servicio-item">
-            <img src={souvenirs} alt="Souvenirs personalizados" />
-            <h3 className="servicio-titulo">Souvenirs exclusivos</h3>
-            <p className="servicio-descripcion">
-              Diseños propios listos para regalar o coleccionar.
-            </p>
-          </div>
-        </div>
       </div>
 
       {/* Nosotros */}
