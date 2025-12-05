@@ -6,7 +6,7 @@ import imagen1 from '../assets/imagen1.webp';
 import imagen2 from '../assets/imagen2.webp';
 import imagen3 from '../assets/imagen3.webp';
 import logo from '../assets/logo-nhiyu.webp';
-import whatsappLogo from '../assets/whatsapp-logo.svg';
+import whatsappLogo from '../assets/whatsapp-logo.png';
 
 const imagenes = [imagen1, imagen2, imagen3];
 
