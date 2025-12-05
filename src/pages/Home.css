@@ -37,7 +37,7 @@
 
 /* Contenedor principal del carrusel */
 .envoltura-carrusel {
-  max-width: 1280px;
+  max-width: 1000px;
   margin: auto;
   text-align: center;
 }
