@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
-import imagen1 from '../assets/imagen1.webp';
-import imagen2 from '../assets/imagen2.webp';
-import imagen3 from '../assets/imagen3.webp';
+import imagen1 from '../assets/imagen1.png';
+import imagen2 from '../assets/imagen1.png';
+import imagen3 from '../assets/imagen1.png';
 import logo from '../assets/logo.png';
 import whatsappLogo from '../assets/whatsapp-logo.png';
 
