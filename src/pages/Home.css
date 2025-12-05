@@ -229,37 +229,88 @@
   padding-right: 20px;
 }
 
-/* Responsivo */
+/* 📱=== Responsivo para pantallas pequeñas === */
 @media (max-width: 768px) {
+  
+  /* Margen general para que nada pegue a los bordes */
+  body {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Carrusel centrado con márgenes */
+  .envoltura-carrusel {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+
+  .carrusel-contenedor {
+    margin-top: 15px;
+  }
+
+  .carrusel-slider img {
+    border-radius: 14px;
+  }
+
+  /* Título intermedio */
+  .titulo-intermedio {
+    font-size: 2.4rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+  }
+
+  /* Sección Nosotros */
+  .nosotros-contenedor,
+  .cuadro-significado {
+    padding: 30px 18px;
+    margin: 30px auto;
+  }
+
+  .nosotros-texto {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  /* === Servicios === */
   .servicios-contenedor {
     flex-direction: column;
-    align-items: center;        /* CENTRA TODO */
+    align-items: center;
     text-align: center;
+    padding: 25px 18px;   /* margen para que no pegue a los lados */
+    gap: 10px;            /* menos espacio entre tarjetas */
   }
 
   .servicio-item {
     width: 100%;
-    padding: 20px 10px;
-  }
-
-  /* Líneas horizontales cuando la vista es vertical */
-  .borde-centro {
-    border: none;               /* quita líneas laterales */
-    border-top: 2px solid #D6D6D6;
-    border-bottom: 2px solid #D6D6D6;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 5px;
   }
 
   .servicio-icono {
-    width: 120px; /* más pequeño y centrado */
-    margin: 0 auto 8px auto;
+    width: 115px;   /* tamaño ideal en móvil */
+    margin: 0 auto 6px auto;
   }
-  .titulo-intermedio {
-    font-size: 2.6rem;
-    margin-top: 30px;      /* separa más del borde superior en phones */
-    padding-left: 20px;    /* evita que quede pegado al borde izquierdo */
-    padding-right: 20px;   /* evita que quede pegado al borde derecho */
+
+  .servicio-titulo {
+    font-size: 2rem;
+    margin-bottom: 4px;
+  }
+
+  .servicio-descripcion {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  /* Líneas horizontales en mobile */
+  .borde-centro {
+    border: none;
+    border-top: 2px solid #D6D6D6;
+    border-bottom: 2px solid #D6D6D6;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }
+
 
