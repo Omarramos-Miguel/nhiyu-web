@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../assets/logo-nhiyu.webp';
+import logo from '../assets/logo.png';
 import instagramIcon from '../assets/icons/instagram.svg';
 import facebookIcon from '../assets/icons/facebook.svg';
 
