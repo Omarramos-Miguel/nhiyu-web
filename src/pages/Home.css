@@ -1,24 +1,24 @@
-/* Primera fuente existente */
+/* ============================= */
+/* 🅰️ FUENTES */
+/* ============================= */
 @font-face {
   font-family: 'MiFuente';
   src: url('../assets/fonts/MiFuente.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
 }
 
-/* Segunda fuente Dongle */
 @font-face {
   font-family: 'Dongle';
   src: url('../assets/fonts/dongle-regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
+/* ============================= */
+/* 🟢 WHATSAPP CONTACTO */
+/* ============================= */
 .whatsapp-contacto {
   background-color: #018B71;
   color: #F2BF27;
-  text-align: center;
   padding: 8px 0;
+  text-align: center;
   font-weight: bold;
   font-size: 1rem;
   position: sticky;
@@ -28,10 +28,9 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  cursor: pointer;
 }
 
-.whatsapp-contacto a {
+.whatsapp-link {
   color: white;
   text-decoration: none;
   display: flex;
@@ -44,47 +43,34 @@
   margin-right: 8px;
 }
 
-/* Contenedor principal del carrusel */
+/* ============================= */
+/* 🖼️ CARRUSEL */
+/* ============================= */
 .envoltura-carrusel {
   max-width: 900px;
   margin: auto;
   text-align: center;
 }
 
-/* Carrusel */
 .carrusel-contenedor {
   margin-top: 20px;
   width: 100%;
-  height: auto;
   overflow: hidden;
-  position: relative;
 }
 
-.carrusel-slider { 
-  display: flex; 
-  transition: transform 0.6s ease; 
-  width: 100%; 
+.carrusel-slider {
+  display: flex;
+  transition: transform 0.6s ease;
 }
 
-.carrusel-slider img {
+.slide-item {
+  min-width: 100%;
+}
+
+.carrusel-img {
   width: 100%;
-  height: auto;
   object-fit: contain;
-  display: block;
   border-radius: 12px;
-}
-
-/* Título intermedio */
-.titulo-intermedio {
-  font-family: 'Dongle';
-  font-size: 3rem;
-  text-align: left;
-  margin-bottom: 5px;
-  margin-top: 25px;
-  color: #5C715E;
-  width: 100%;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 /* Indicadores */
@@ -98,95 +84,36 @@
 .punto {
   width: 12px;
   height: 12px;
-  border-radius: 50%;
   background-color: #ccc;
+  border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .punto.activo {
   background-color: #80BFB9;
 }
 
-/* Nosotros */
-.nosotros-contenedor {
-  font-family: "mifuente";
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: 50px auto;
-  background-color: #fff;
-  color: #333;
-  text-align: center;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.nosotros-titulo {
-  font-size: 2rem;
-  margin-bottom: 20px;
+/* ============================= */
+/* 🟧 SERVICIOS */
+/* ============================= */
+.titulo-intermedio {
+  font-family: 'Dongle';
+  font-size: 3rem;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  text-align: left;
+  padding: 0 25px;
   color: #5C715E;
-}
-
-.nosotros-logo {
-  width: 120px;
-  height: auto;
-  margin: 15px auto;
-  display: block;
-}
-
-.cuadro-significado {
-  font-family: "mifuente";
-  background-color: #E4F2C4;
-  padding: 35px 25px;
-  margin: 40px auto;
-  max-width: 900px;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-}
-
-.nosotros-texto {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 15px;
-}
-
-/* Links del carrusel */
-.carrusel-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.carrusel-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-.slide-item {
-  min-width: 100%;
-  height: auto;
-}
-
-.slide-link,
-.slide-link img {
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 .servicios-contenedor {
   max-width: 1000px;
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 25px 20px;
   margin: 20px auto;
+  padding: 25px 20px;
+  background: white;
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
   gap: 5px;
 }
 
@@ -198,7 +125,6 @@
 
 .servicio-icono {
   width: 140px;
-  height: auto;
   opacity: 0.85;
   margin-bottom: 4px;
 }
@@ -207,7 +133,6 @@
   font-family: 'Dongle';
   font-size: 2.2rem;
   color: #00aa8c;
-  margin-bottom: 8px;
 }
 
 .servicio-descripcion {
@@ -219,55 +144,26 @@
 .borde-centro {
   border-left: 2px solid #D6D6D6;
   border-right: 2px solid #D6D6D6;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
 /* ============================= */
-/* 📱 RESPONSIVE 768px */
+/* 📱 RESPONSIVE */
 /* ============================= */
 @media (max-width: 768px) {
-
   .envoltura-carrusel {
-    max-width: 100%;
     padding: 0 12px;
-  }
-
-  .carrusel-contenedor {
-    margin-top: 15px;
-  }
-
-  .carrusel-slider img {
-    border-radius: 14px;
   }
 
   .titulo-intermedio {
     font-size: 2.4rem;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: left;
+    padding: 0 10px;
   }
 
-  .nosotros-contenedor,
-  .cuadro-significado {
-    padding: 30px 18px;
-    margin: 30px auto;
-  }
-
-  .nosotros-texto {
-    font-size: 1rem;
-    line-height: 1.55;
-  }
-
-  /* Servicios */
   .servicios-contenedor {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     padding: 25px 18px;
-    gap: 10px;
+    text-align: center;
   }
 
   .servicio-item {
@@ -277,24 +173,13 @@
 
   .servicio-icono {
     width: 120px;
-    margin-bottom: 4px;
   }
 
-  .servicio-titulo {
-    margin-bottom: 8px;
-  }
-
-  .servicio-descripcion {
-    line-height: 1.35;
-  }
-
-  /* Líneas horizontales en mobile */
   .borde-centro {
     border: none;
     border-top: 2px solid #D6D6D6;
     border-bottom: 2px solid #D6D6D6;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding: 18px 0;
   }
 }
 
