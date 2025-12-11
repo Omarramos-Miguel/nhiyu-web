@@ -115,7 +115,7 @@ return (
         </div>
       </div>
     </div>
-  </div>  // <-- este faltaba
+  </div>
 );
 
 export default Home;
