@@ -116,38 +116,6 @@ function Home() {
           </div>
 
       </div>
-
-      {/* Nosotros */}
-      <div className="nosotros-contenedor">
-        <img src={logo} alt="Logo Nhiyú" className="nosotros-logo" />
-        <h2 className="nosotros-titulo">Sobre Nosotros</h2>
-
-        <p className="nosotros-texto">
-          <strong>Nhiyú</strong> nace en el corazón de <strong>Bahías de Huatulco</strong>,
-          inspirado en el arte, la naturaleza y el cariño por los detalles.
-        </p>
-
-        <p className="nosotros-texto">
-          Creamos regalos personalizados, llaveros, cajas de MDF y detalles únicos,
-          siempre cuidando cada paso del proceso.
-        </p>
-
-        <p className="nosotros-texto">
-          <strong>Creemos en el valor de lo hecho con dedicación y en las historias que cada pieza puede contar.</strong>
-        </p>
-      </div>
-
-      {/* Significado */}
-      <div className="cuadro-significado">
-        <h3 className="cuadro-titulo">¿Qué significa Nhiyú?</h3>
-        <p className="cuadro-texto">
-          <strong>Nhi</strong> significa “mar”, y <strong>Yoo</strong> significa “hogar”.
-        </p>
-        <p className="cuadro-texto">
-          Llévate contigo “recuerdos con alma de mar”.
-        </p>
-      </div>
-    </div>
   );
 }
 
