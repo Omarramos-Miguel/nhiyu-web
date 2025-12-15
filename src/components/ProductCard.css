@@ -71,10 +71,6 @@
   transition: background-color 0.3s;
 }
 
-.btn-detalle:hover {
-  background-color: #00aa8c;
-  color: #ffd232;
-}
 
 /* ===================== */
 /* 📱 RESPONSIVE PRODUCT CARD */

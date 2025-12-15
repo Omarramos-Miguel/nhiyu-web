@@ -292,6 +292,7 @@
   font-size: 4rem;
   font-weight: 600; /* ✅ */
   margin: 0 0 25px;
+  color: white;
   line-height: 0.9;
 }
 
