@@ -6,6 +6,8 @@ import logo from '../assets/logo.png';
 import whatsappLogo from '../assets/whatsapp-logo.png';
 import instagramIcon from '../assets/icons/instagram.png';
 import facebookIcon from '../assets/icons/facebook.png';
+import whatsappIcon from '../assets/icons/whatsapp.png';
+import tiktokIcon from '../assets/icons/tik-tok.png';
 
 function Navbar() {
   const [menuAbierto, setMenuAbierto] = useState(false);
@@ -54,11 +56,17 @@ function Navbar() {
 
         {/* Redes desktop */}
         <div className="nav-socials">
+          <a href="https://www.facebook.com/profile.php?id=61577842755748" target="_blank" rel="noopener noreferrer">
+            <img src={facebookIcon} alt="Facebook" />
+          </a>
           <a href="https://www.instagram.com/nhiyu_huatulco/" target="_blank" rel="noopener noreferrer">
             <img src={instagramIcon} alt="Instagram" />
           </a>
-          <a href="https://www.facebook.com/profile.php?id=61577842755748" target="_blank" rel="noopener noreferrer">
-            <img src={facebookIcon} alt="Facebook" />
+          <a href="https://www.tiktok.com/@nhiyuhuatulco" target="_blank" rel="noopener noreferrer">
+            <img src={tiktokIcon} alt="tiktok" />
+          </a>
+          <a href="https://wa.me/message/PSTT4KMKVZCHG1" target="_blank" rel="noopener noreferrer">
+            <img src={whatsappIcon} alt="whatsapp" />
           </a>
         </div>
       </nav>

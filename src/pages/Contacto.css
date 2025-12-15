@@ -1,9 +1,19 @@
+@font-face {
+  font-family: 'dongle';
+  src: url('../assets/fonts/Dongle-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MiFuente';
+  src: url('../assets/fonts/Notosans.ttf') format('opentype');
+}
 .contacto-container {
   max-width: 800px;
   margin: auto;
   padding: 2rem;
   text-align: center;
-  font-family: 'MiFuente', sans-serif;
+  font-family: "dongle", "MiFuente";
   color: #333;
 }
 
@@ -15,15 +25,18 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   margin-top: 1rem;
 }
-
+.redes{
+  color: #00aa8c;
+}
 .contacto-titulo {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 0.5rem;
-  color: #588157;
+  color: #01AA8D;
 }
 
 .contacto-subtitulo {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: "MiFuente";
   margin-bottom: 2rem;
   color: #6c757d;
 }
@@ -43,7 +56,7 @@
 }
 
 .contacto-formulario button {
-  background-color: #80BFB9;
+  background-color: 2364d2;
   color: white;
   border: none;
   padding: 0.8rem;
@@ -53,27 +66,29 @@
   transition: background-color 0.3s ease;
 }
 
-.contacto-formulario button:hover {
-  background-color: #5aa49c;
-}
 
 .contacto-info {
-  margin-top: 3rem;
+  margin-top: 1rem;
   text-align: left;
+  font-family: "MiFuente";
 }
 
 .contacto-info h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  font-weight: normal;
   color: #495057;
+  margin: 20px 0;
 }
 
 .contacto-info a {
-  color: #80BFB9;
-  text-decoration: none;
+  color: #777;
+  font-family: "MiFuente";
+  text-decoration: underline;
 }
 
 .contacto-info a:hover {
-  text-decoration: underline;
+  color: #00aa8c;
+  
 }
 
 .logo-contacto {

@@ -1,6 +1,6 @@
 import ProductCard from '../components/ProductCard';
 import './Catalogo.css';
-import whatsappLogo from '../assets/whatsapp-logo.png';
+
 
 function Catalogo({ productos }) {
   return (
