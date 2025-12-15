@@ -14,8 +14,7 @@
 
 .navbar {
   background-color: #01AA8D;
-  font-family: 'dongle';
-  padding: 15px 30px;
+  padding: 20px 30px;
   display: flex;
   align-items: center;
   position: relative;
@@ -28,7 +27,7 @@
 }
 
 .logo-img {
-  height: 28px;
+  height: 35px;   /* ⬅️ aquí crece */
   width: auto;
   display: block;
 }
@@ -51,8 +50,8 @@
   text-decoration: none;
   color: #ffffff;
   font-family: 'MiFuente';
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: normal;
+  font-size: .5rem;
   transition: color 0.3s ease;
   padding: 6px 4px;
 }
