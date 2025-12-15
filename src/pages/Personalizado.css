@@ -1,0 +1,125 @@
+/* ============================= */
+/* 🟦 PERSONALIZADO */
+/* ============================= */
+
+.personalizado-page {
+    font-family: 'MiFuente';
+    color: #3f3f3f;
+    padding-bottom: 80px;
+  }
+  
+  /* HERO */
+  .personalizado-hero {
+    max-width: 900px;
+    margin: 80px auto 60px;
+    padding: 0 25px;
+    text-align: center;
+  }
+  
+  .personalizado-hero h1 {
+    font-family: 'Dongle';
+    font-size: 5rem;
+    color: #00aa8c;
+    margin-bottom: 10px;
+    line-height: 0.9;
+  }
+  
+  .personalizado-hero p {
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  /* BLOQUES */
+  .personalizado-bloque {
+    max-width: 900px;
+    margin: 0 auto 35px;
+    padding: 10px 45px 35px;
+    background: white;
+    border-radius: 28px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  }
+  
+  .personalizado-bloque h2 {
+    font-family: 'Dongle';
+    font-size: 3rem;
+    color: #00aa8c;
+    margin-bottom: 10px;
+  }
+  
+  .personalizado-bloque p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    color: #444;
+  }
+  
+  /* LISTA */
+  .personalizado-lista {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+  }
+  
+  .personalizado-lista li {
+    padding-left: 18px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .personalizado-lista li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #00aa8c;
+  }
+  
+  /* PROCESO */
+  .personalizado-proceso {
+    padding-left: 20px;
+  }
+  
+  .personalizado-proceso li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* CTA */
+  .personalizado-cta {
+    max-width: 900px;
+    margin: 70px auto 0;
+    padding: 55px 45px;
+    border-radius: 32px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #00aa8c, #009b80);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  }
+  
+  .personalizado-cta h2 {
+    font-family: 'Dongle';
+    font-size: 4rem;
+    margin-bottom: 10px;
+    line-height: 0.9;
+  }
+  
+  .personalizado-cta p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .btn-personalizado {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 52px;
+    background: white;
+    color: #00aa8c;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  

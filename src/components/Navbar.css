@@ -4,16 +4,27 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'MiFuente';
+  src: url('../assets/fonts/Notosans.ttf') format('opentype');
+}
+/* ============================= */
+/* NAVBAR BASE */
+/* ============================= */
 
 .navbar {
   background-color: #01AA8D;
   font-family: 'dongle';
   padding: 15px 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 1000;
+}
+
+/* LOGO */
+.logo-container {
+  margin-right: 100px; /* espacio entre logo y menú */
 }
 
 .logo-img {
@@ -22,6 +33,9 @@
   display: block;
 }
 
+/* ============================= */
+/* LINKS DESKTOP */
+/* ============================= */
 
 .nav-links {
   list-style: none;
@@ -29,21 +43,27 @@
   gap: 30px;
   margin: 0;
   padding: 0;
+
+  margin-right: auto; /* 🔥 empuja redes a la derecha */
 }
 
 .nav-links li a {
   text-decoration: none;
   color: #ffffff;
+  font-family: 'MiFuente';
   font-weight: 500;
-  font-size: 1.6rem;
-  transition: all 0.3s ease;
-  padding: 6px 12px;
-  border-radius: 8px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  padding: 6px 4px;
 }
 
 .nav-links li a:hover {
   color: #FFD231;
 }
+
+/* ============================= */
+/* REDES DESKTOP */
+/* ============================= */
 
 .nav-socials {
   display: flex;
@@ -60,7 +80,10 @@
   filter: brightness(0.7);
 }
 
-/* HAMBURGUESA personalizada */
+/* ============================= */
+/* HAMBURGUESA */
+/* ============================= */
+
 .hamburger {
   display: none;
   width: 30px;
@@ -79,116 +102,134 @@
   transition: all 0.3s ease;
 }
 
-.hamburger span:nth-child(1) {
-  top: 0;
-}
-.hamburger span:nth-child(2) {
-  top: 9px;
-}
-.hamburger span:nth-child(3) {
-  bottom: 0;
-}
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 9px; }
+.hamburger span:nth-child(3) { bottom: 0; }
 
 .hamburger.open span:nth-child(1) {
   transform: rotate(45deg);
   top: 9px;
 }
+
 .hamburger.open span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.open span:nth-child(3) {
   transform: rotate(-45deg);
   bottom: 9px;
 }
 
-/* Redes sociales móviles */
+/* ============================= */
+/* REDES MOBILE */
+/* ============================= */
+
 .mobile-socials {
   display: none;
   justify-content: center;
-  gap: 20px;
-  margin-top: 15px;
+  gap: 25px;
+  margin-top: 20px;
 }
 
 .mobile-socials img {
   height: 28px;
   width: 28px;
-  filter: brightness(0.7);
+  filter: brightness(0.8);
   transition: filter 0.3s ease;
 }
 
 .mobile-socials img:hover {
   filter: brightness(1);
 }
+/* ============================= */
+/* 🟢 WHATSAPP BAR (DEBAJO NAV) */
+/* ============================= */
 
-/* Responsive */
+.whatsapp-bar {
+  background-color: #018B71;
+  color: #F2BF27;
+  padding: 8px 0;
+  text-align: center;
+  font-family: 'Dongle';
+  font-size: .8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.whatsapp-bar a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: 'MiFuente';
+  gap: 8px;
+}
+
+.whatsapp-bar img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
 @media (max-width: 768px) {
+
+  /* MENU DESPLEGABLE */
   .nav-links {
     position: absolute;
-    top: 100px; /* para separar la barra WhatsApp */
+    top: 100%; /* 🔥 ya NO depende de WhatsApp */
     left: 0;
     right: 0;
-    background-color: #E4F2C4;
+    background-color: #01AA8D;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 30px 0;
+    align-items: center; /* ✅ centrado */
+    gap: 18px;
+    padding: 25px 0;
     display: none;
-    animation: slideDown 0.3s ease forwards;
     z-index: 999;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* sombra */
-    border-radius: 12px; /* bordes redondeados para mejor look */
-  }
-
-  .nav-links li {
-    margin-bottom: 12px;
-    width: 80%;
-  }
-
-  .nav-links li a {
-    display: block;
-    padding: 10px 20px;
-    color: #4a4a4a;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.10); /* sombra */
-    text-decoration: none;
-  }
-
-  .nav-links li a:hover {
-    background-color: #F2BF27;
-    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 18px 18px;
   }
 
   .nav-links.activo {
     display: flex;
   }
 
-  .hamburger {
-    display: block;
+  .nav-links li {
+    width: 100%;
+    text-align: center;
   }
 
+  .nav-links li a {
+    font-family: 'dongle';
+    font-size: 2.2rem;
+    font-weight: normal;
+    color: #ffffff;
+    padding: 6px 0;
+    box-shadow: none;
+  }
+
+  .nav-links li a:hover {
+    color: #FFD231;
+  }
+
+  /* HAMBURGUESA */
+  .hamburger {
+    display: block;
+    margin-left: auto; /* 🔥 lo empuja a la derecha */
+  }
+  /* OCULTAR REDES DESKTOP */
   .nav-socials {
     display: none;
   }
 
+  /* MOSTRAR REDES MOBILE */
   .mobile-socials {
     display: flex;
-    gap: 50px;
-    margin-top: 15px;
-    padding: 0;
-    justify-content: center;
-  }
-  .mobile-socials a {
-    padding: 0;
-    margin: 0;
-  }
-  .mobile-socials img {
-    margin: 0;
-    width: 28px;
-    height: 28px;
-    display: block;
   }
 }
-
-

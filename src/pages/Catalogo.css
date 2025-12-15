@@ -20,33 +20,6 @@ h2{
   margin-top: 20px;
   justify-items: center; /* centra las tarjetas */
 }
-.whatsapp-contacto {
-  background-color: #018B71;
-  color: #F2BF27;
-  text-align: center;
-  padding: 8px 0;
-  font-weight: bold;
-  font-size: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-}
-.whatsapp-contacto a {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-.whatsapp-logo {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-}
 /* Adaptar diseño para pantallas pequeñas */
 @media (max-width: 600px) {
   .productos-grid {

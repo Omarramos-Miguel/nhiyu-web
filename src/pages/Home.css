@@ -5,44 +5,15 @@
 @font-face {
   font-family: 'MiFuente';
   src: url('../assets/fonts/Notosans.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Dongle';
   src: url('../assets/fonts/dongle-regular.ttf') format('truetype');
-}
-
-/* ============================= */
-/* 🟢 WHATSAPP */
-/* ============================= */
-
-.whatsapp-contacto {
-  background-color: #018B71;
-  color: #F2BF27;
-  padding: 8px 0;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.whatsapp-link {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-
-.whatsapp-logo {
-  width: 24px;
-  height: 24px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ============================= */
@@ -101,21 +72,22 @@
 /* ============================= */
 
 .titulo-intermedio {
-  max-width: 1000px;          /* mismo ancho que la tarjeta */
+  max-width: 1000px;
   margin: 40px auto 15px;
-  padding-left: 100px;         /* 🔥 empuja el título a la derecha */
+  padding-left: 100px;
   padding-right: 25px;
   text-align: left;
   font-family: 'Dongle';
   font-size: 4rem;
+  font-weight: 600; /* ✅ SIN BOLD */
   color: #00aa8c;
 }
 
 /* Contenedor blanco */
 .servicios-contenedor {
   max-width: 1000px;
-  margin: 0px auto;
-  padding: 10px 0px;
+  margin: 0 auto;
+  padding: 10px 0;
   background: white;
   border-radius: 24px;
   display: flex;
@@ -129,12 +101,10 @@
   flex: 1;
   text-align: center;
   position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 5 15px;
+  padding: 5px 15px;
 }
 
 /* ÍCONO */
@@ -145,10 +115,10 @@
   opacity: 0.9;
 }
 
-/* CONTENEDOR DEL TEXTO */
+/* CONTENEDOR TEXTO */
 .servicio-texto {
   position: relative;
-  margin-top: 0px;   /* separa texto del icono */
+  margin-top: 0;
   padding: 0 10px;
 }
 
@@ -156,6 +126,7 @@
 .servicio-titulo {
   font-family: 'Dongle';
   font-size: 2rem;
+  font-weight: normal; /* ✅ SIN BOLD */
   color: #00aa8c;
   margin: 0;
 }
@@ -164,25 +135,23 @@
 .servicio-descripcion {
   margin: 0;
   font-family: 'MiFuente';
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #444;
   line-height: 1.35;
   min-height: 70px;
 }
 
-/* ============================= */
-/* | DIVISOR VERTICAL ENTRE TEXTOS | */
-/* ============================= */
-
+/* Divisor */
 .servicio-item:not(:last-child) .servicio-texto::after {
   content: "";
   position: absolute;
-  right: -30px;        /* espacio entre columnas */
-  top: 0;              /* inicia en el título */
-  height: 100%;        /* termina en la descripción */
-  width: .5px;
+  right: -30px;
+  top: 0;
+  height: 100%;
+  width: 0.5px;
   background-color: #00aa8c;
 }
+
 /* ============================= */
 /* ⭐ DESTACADOS */
 /* ============================= */
@@ -193,21 +162,19 @@
   padding: 0 25px;
 }
 
-/* Encabezado: título + link */
 .destacados-header {
-  max-width: 1200px;
-  margin: 0 auto 25px;
-  padding-left: 45px;   /* 🔥 mismo desplazamiento */
+  margin-bottom: 25px;
+  padding-left: 45px;
   padding-right: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-
 .destacados-header h2 {
   font-family: 'Dongle';
   font-size: 4rem;
+  font-weight: 600; /* ✅ */
   color: #00aa8c;
   margin: 0;
 }
@@ -222,13 +189,13 @@
   color: #00aa8c;
 }
 
-/* Reutiliza la grid del catálogo */
 .destacados .productos-grid {
   padding: 0;
   margin-top: 10px;
 }
+
 /* ============================= */
-/* ✨ PERSONALIZA A TU MANERA */
+/* ✨ PERSONALIZA */
 /* ============================= */
 
 .personaliza-seccion {
@@ -240,19 +207,18 @@
 .personaliza-titulo {
   font-family: 'Dongle';
   font-size: 4rem;
+  font-weight: 600; /* ✅ */
   color: #00aa8c;
   margin-bottom: 20px;
-  padding-left: 45px; /* mantiene alineación con Destacados */
+  padding-left: 45px;
 }
 
-/* CONTENEDOR GENERAL */
 .personaliza-contenedor {
   display: flex;
   gap: 30px;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
-/* CUADRO DE IMAGEN */
 .personaliza-imagen {
   flex: 0.8;
   width: 300px;
@@ -261,31 +227,27 @@
   overflow: hidden;
 }
 
-/* IMAGEN */
 .personaliza-imagen img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
-/* CUADRO DE TEXTO */
 .personaliza-texto {
   flex: 1.6;
   background: white;
   border-radius: 24px;
   padding: 30px;
-  height: 300px;
-  box-sizing: border-box;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* TEXTO */
 .personaliza-texto h3 {
   font-family: 'MiFuente';
   font-size: 1.4rem;
+  font-weight: normal;
   color: #00aa8c;
   margin: 0 0 10px;
 }
@@ -298,16 +260,16 @@
   margin: 0;
 }
 
-/* BOTÓN */
 .btn-personaliza {
   padding: 12px 26px;
-  background-color: #2364D2; /* azul de tu marca */
+  background-color: #2364D2;
   color: white;
-  border-radius: 999px;
+  border-radius: 90px;
   font-family: 'MiFuente';
   text-decoration: none;
   width: fit-content;
 }
+
 /* ============================= */
 /* 🟩 SOBRE NOSOTROS */
 /* ============================= */
@@ -319,16 +281,16 @@
 }
 
 .sobre-card {
-  background-color: #00aa8c; /* verde marca */
+  background-color: #00aa8c;
   border-radius: 32px;
   padding: 50px 60px;
   color: white;
-  
 }
 
 .sobre-titulo {
   font-family: 'Dongle';
   font-size: 4rem;
+  font-weight: 600; /* ✅ */
   margin: 0 0 25px;
   line-height: 0.9;
 }
@@ -338,13 +300,11 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
-  max-width: 850px;
 }
 
-/* BOTÓN */
 .btn-sobre {
-  display: inline-block;
-  margin-top: 20px;
+  display: inline-block;   /* 🔑 CLAVE */
+  margin-top: 30px;        /* 🔑 ESPACIO REAL */
   padding: 14px 50px;
   background: white;
   color: #00aa8c;
@@ -352,171 +312,61 @@
   font-family: 'MiFuente';
   text-decoration: none;
   font-size: 1rem;
-  transition: all 0.3s ease;
-  margin: 20px auto 0;
-}
-
-.btn-sobre:hover {
-  background: #f2f2f2;
 }
 
 /* ============================= */
-/* 📱 RESPONSIVE — MOBILE */
+/* 📱 RESPONSIVE */
 /* ============================= */
 
 @media (max-width: 768px) {
 
-  .titulo-intermedio {
+  .titulo-intermedio,
+  .destacados-header,
+  .personaliza-titulo {
     padding-left: 20px;
     text-align: center;
   }
-  .envoltura-carrusel {
-    padding: 0 20px;
-  }
+
   .servicios-contenedor {
     flex-direction: column;
-    gap: 20px;
-    padding: 10px 5px; /* ✅ padding INTERNO, como debe ser */
   }
-  .servicios-wrapper {
-    padding: 0 20px;
-  }
+
   .servicio-item {
-    width: 100%;
     flex-direction: row;
     align-items: center;
     text-align: left;
     gap: 15px;
-    padding: 5px 0;
   }
-  .destacados-header {
-    padding-left: 20px;
-    flex-direction: column;
-    gap: 8px;
-  }
+
   .servicio-icono {
     width: 100px;
     height: 100px;
-    flex-shrink: 0;
   }
 
-  .servicio-texto {
-    margin-top: 0;
-    padding: 0;
-  }
-
-  .servicio-titulo {
-    font-size: 2rem;
-  }
-
-  .servicio-descripcion {
-    font-size: 1rem;
-    color: #555;
-  }
-
-  /* Quitar divisor vertical en móvil */
   .servicio-texto::after {
     display: none;
   }
-  /* ============================= */
-  /* ✨ PERSONALIZA — OPCIÓN 1 */
-  /* ============================= */
 
-  .personaliza-seccion {
-    margin: 30px auto;
-    padding: 0 20px;
-  }
-
-  .personaliza-titulo {
-    font-size: 4rem;
-    padding-left: 0;
-    text-align: center;
-    line-height: 0.9;   /* 🔥 más compacto */
-    margin-bottom: 25px;
-  }
-
-  /* CONTENEDOR = UNA SOLA TARJETA */
   .personaliza-contenedor {
-    display: flex;
     flex-direction: column;
-    gap: 0;                 /* 🔥 clave */
-    align-items: stretch;
   }
 
-  /* IMAGEN ARRIBA */
   .personaliza-imagen {
     width: 100%;
     height: auto;
-    margin: 0;
-    border-radius: 24px 24px 0 0;   /* 🔥 solo arriba */
-    overflow: hidden;
+    border-radius: 24px 24px 0 0;
   }
 
-  .personaliza-imagen img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;           /* editorial */
-    object-fit: cover;
-    display: block;
-  }
-
-  /* TEXTO ABAJO */
   .personaliza-texto {
-    width: 100%;
     height: auto;
-    padding: 24px;
-    border-radius: 0 0 24px 24px;  /* 🔥 solo abajo */
-    background: white;
-
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+    border-radius: 0 0 24px 24px;
   }
 
-  .personaliza-texto h3 {
-    font-size: 1.25rem;
-    margin: 0;
+  .sobre-card {
+    padding: 35px 25px;
   }
 
-  .personaliza-texto p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin: 0;
+  .sobre-titulo {
+    font-size: 3rem;
   }
-
-  /* BOTÓN */
-  .btn-personaliza {
-    align-self: flex-start;
-    padding: 12px 24px;
-  }
-/* 🟩 SOBRE NOSOTROS — MOBILE */
-.sobre-seccion {
-  margin: 50px auto;
-  padding: 0 20px;
-}
-
-.sobre-card {
-  padding: 35px 25px;
-  border-radius: 28px;
-}
-
-.sobre-titulo {
-  font-size: 3rem;
-  text-align: left;
-}
-
-.sobre-card p {
-  font-size: 0.95rem;
-}
-
-.btn-sobre {
-  align-self: center;
-  margin-top: 20px;
-}
-.sobre-btn-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
 }

@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
 import Home from './pages/Home';
+import Personalizado from './pages/Personalizado';
 import Catalogo from './pages/Catalogo';
 import Contacto from './pages/Contacto';
 import Gracias from './pages/Gracias';
@@ -25,7 +26,10 @@ function App() {
           path="/"
           element={<Home productos={productos} />}
         />
-
+        <Route
+          path="/personalizado"
+          element={<Personalizado />}
+        />
         {/* CATÁLOGO */}
         <Route
           path="/catalogo"

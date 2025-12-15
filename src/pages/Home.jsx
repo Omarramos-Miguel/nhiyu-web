@@ -22,11 +22,6 @@ import souvenirs from '../assets/souvenirs.png';
 /* ============================= */
 import personalizadoImg from '../assets/personalizado.png';
 
-/* ============================= */
-/* 🟢 WHATSAPP */
-/* ============================= */
-import whatsappLogo from '../assets/whatsapp-logo.png';
-
 const imagenes = [imagen1, imagen2, imagen3];
 
 function Home({ productos }) {
@@ -56,19 +51,6 @@ function Home({ productos }) {
 
   return (
     <div>
-
-      {/* 🟢 WHATSAPP */}
-      <div className="whatsapp-contacto">
-        <a
-          href="https://wa.me/message/PSTT4KMKVZCHG1"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="whatsapp-link"
-        >
-          <img src={whatsappLogo} alt="WhatsApp" className="whatsapp-logo" />
-          Contáctanos por WhatsApp
-        </a>
-      </div>
 
       {/* 🖼️ CARRUSEL */}
       <div className="envoltura-carrusel">
@@ -179,8 +161,8 @@ function Home({ productos }) {
               creados a tu medida.
             </p>
 
-            <Link to="/contacto" className="btn-personaliza">
-              Ir a contacto
+            <Link to="/personalizado" className="btn-personaliza">
+              Ver personalizado
             </Link>
           </div>
         </div>
@@ -190,21 +172,17 @@ function Home({ productos }) {
       <section className="sobre-seccion">
         <div className="sobre-card">
           <h2 className="sobre-titulo">Sobre nosotros</h2>
+          <p>
+            Nhiyu es un estudio de impresión 3D y grabado láser ubicado en Bahías de
+            Huatulco, Oaxaca. Nuestra inspiración nace del mar, la naturaleza y el
+            significado de crear piezas con identidad.
+          </p>
 
           <p>
-  Nhiyu es un estudio de impresión 3D y grabado láser ubicado en Bahías de
-  Huatulco, Oaxaca. Nuestra inspiración nace del mar, la naturaleza y el
-  significado de crear piezas con identidad.
-</p>
-
-<p>
-  Diseñamos recuerdos personalizados con precisión y dedicación, cuidando cada
-  detalle para transformar ideas en objetos únicos que conectan con las
-  personas y su historia.
-</p>
-
-
-
+            Diseñamos recuerdos personalizados con precisión y dedicación, cuidando cada
+            detalle para transformar ideas en objetos únicos que conectan con las
+            personas y su historia.
+          </p>
           {/* 🔥 wrapper SOLO para centrar el botón */}
           <div className="sobre-btn-wrapper">
             <Link to="/sobre-nosotros" className="btn-sobre">
