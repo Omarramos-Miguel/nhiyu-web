@@ -1,12 +1,15 @@
 @font-face {
-  font-family: 'MiFuente';
-  src: url('../assets/fonts/MiFuente.otf') format('opentype');
+  font-family: 'dongle';
+  src: url('../assets/fonts/Dongle-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'MiFuente';
+  src: url('../assets/fonts/Notosans.ttf') format('opentype');
+}
 .catalogo {
   text-align: center;
-  background-color: #f9f9f9; /* fondo suave para separar del resto */
   color: #333;
 }
 h2{
