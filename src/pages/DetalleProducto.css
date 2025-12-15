@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../assets/fonts/Notosans.ttf') format('opentype');
+  }
+/* ============================= */
+/* 📄 CONTENEDOR PRINCIPAL */
+/* ============================= */
+
+.detalle-producto {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  
+  /* ============================= */
+  /* 🖼️ IMAGEN / SLIDER */
+  /* ============================= */
+  
+  .detalle-imagen {
+    position: relative;
+  }
+  
+  .detalle-imagen img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }
+  
+  /* Controles */
+  .detalle-controles {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+  }
+  
+  .detalle-controles button {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .detalle-controles button:hover {
+    background: #00aa8c;
+  }
+  
+  /* ============================= */
+  /* 📝 INFORMACIÓN */
+  /* ============================= */
+  
+  .detalle-info h2 {
+    font-family: 'Dongle';
+    font-size: 3.4rem;
+    color: #00aa8c;
+    margin-bottom: 10px;
+  }
+  
+  .detalle-descripcion {
+    font-family: 'MiFuente';
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* ============================= */
+  /* 📲 BOTÓN WHATSAPP */
+  /* ============================= */
+  
+  .btn-whatsapp {
+    display: inline-block;
+    background-color: #018B71;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'MiFuente';
+    font-size: 1rem;
+  }
+  
+  .btn-whatsapp:hover {
+    background-color: #00aa8c;
+  }
+  
+  /* ============================= */
+  /* 📱 RESPONSIVE */
+  /* ============================= */
+  
+  @media (max-width: 768px) {
+    .detalle-producto {
+      grid-template-columns: 1fr;
+    }
+  
+    .detalle-info h2 {
+      font-size: 2.8rem;
+    }
+  }
+  

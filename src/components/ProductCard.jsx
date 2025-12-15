@@ -1,35 +1,28 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './ProductCard.css';
 
 function ProductCard({ producto }) {
   const [indiceImagen, setIndiceImagen] = useState(0);
   const imagenes = producto.imagen;
 
-  const siguienteImagen = () => {
-    setIndiceImagen((prev) => (prev + 1) % imagenes.length);
-  };
-
-  const anteriorImagen = () => {
-    setIndiceImagen((prev) => (prev - 1 + imagenes.length) % imagenes.length);
-  };
-
   return (
     <div className="product-card">
       <img
         src={imagenes[indiceImagen]}
-        alt={`${producto.nombre} imagen ${indiceImagen + 1}`}
+        alt={producto.nombre}
         loading="lazy"
-        width="300" // puedes ajustar según tu diseño
-        height="300" // o usa aspect-ratio en CSS
       />
-      {imagenes.length > 1 && (
-        <div className="carousel-controls">
-          <button onClick={anteriorImagen} aria-label="Imagen anterior">&#8592;</button>
-          <button onClick={siguienteImagen} aria-label="Siguiente imagen">&#8594;</button>
-        </div>
-      )}
-      <h3>{producto.nombre}</h3>
-      <p>{producto.descripcion}</p>
+
+      <p className="titulo">{producto.nombre}</p>
+      <p className="descripcion">{producto.descripcion}</p>
+
+      {/* BOTÓN CENTRADO */}
+      <div className="btn-detalle-wrapper">
+        <Link to={`/producto/${producto.id}`} className="btn-detalle">
+          Ver detalles
+        </Link>
+      </div>
     </div>
   );
 }

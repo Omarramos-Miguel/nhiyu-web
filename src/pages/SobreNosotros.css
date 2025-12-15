@@ -1,0 +1,173 @@
+/* ============================= */
+/* 🟩 SOBRE NOSOTROS — CUADROS */
+/* ============================= */
+
+.sobre-page {
+    font-family: 'MiFuente';
+    color: #3f3f3f;
+    padding-bottom: 80px;
+  }
+  
+  /* ============================= */
+  /* HERO */
+  /* ============================= */
+  
+  .sobre-hero {
+    max-width: 900px;
+    margin: 80px auto 60px;
+    padding: 0 25px;
+    text-align: center;
+  }
+  
+  .sobre-hero h1 {
+    font-family: 'Dongle';
+    font-size: 5rem;
+    color: #00aa8c;
+    margin-bottom: 15px;
+    line-height: 0.9;
+  }
+  
+  .sobre-hero p {
+    font-size: 1.05rem;
+    max-width: 620px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  /* ============================= */
+  /* CONTENIDO EN CUADROS */
+  /* ============================= */
+  
+  .sobre-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px; /* separación entre cuadros */
+  }
+  
+  .sobre-bloque {
+    background: white;
+    border-radius: 28px;
+    padding: 40px 45px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  }
+  
+  .sobre-bloque h2 {
+    font-family: 'Dongle';
+    font-size: 3rem;
+    color: #00aa8c;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+  
+  .sobre-bloque p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    color: #444;
+  }
+  
+  /* ============================= */
+  /* CTA EN SU PROPIO CUADRO */
+  /* ============================= */
+  
+  .sobre-cta {
+    max-width: 900px;
+    margin: 70px auto 0;
+    padding: 55px 45px;
+    border-radius: 32px;
+    text-align: center;
+    color: white;
+  
+    background: linear-gradient(
+      135deg,
+      #00aa8c 0%,
+      #009b80 100%
+    );
+  
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  }
+  
+  .sobre-cta h2 {
+    font-family: 'Dongle';
+    font-size: 4rem;
+    margin-bottom: 10px;
+    line-height: 0.9;
+  }
+  
+  .sobre-cta p {
+    font-size: 1rem;
+    margin-bottom: 28px;
+    line-height: 1.6;
+    color: #f2f2f2;
+  }
+  
+  /* BOTÓN CTA */
+  .btn-sobre-cta {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 52px;
+    background: white;
+    color: #00aa8c;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-sobre-cta:hover {
+    background: #f4f4f4;
+  }
+  
+  /* ============================= */
+  /* 📱 RESPONSIVE */
+  /* ============================= */
+  
+  @media (max-width: 768px) {
+  
+    .sobre-hero {
+      margin: 60px auto 45px;
+    }
+  
+    .sobre-hero h1 {
+      font-size: 3.5rem;
+    }
+  
+    .sobre-hero p {
+      font-size: 1rem;
+    }
+  
+    .sobre-contenido {
+      gap: 25px;
+    }
+  
+    .sobre-bloque {
+      padding: 30px 25px;
+      border-radius: 24px;
+    }
+  
+    .sobre-bloque h2 {
+      font-size: 2.4rem;
+    }
+  
+    .sobre-cta {
+      margin: 50px 20px 0;
+      padding: 40px 25px;
+      border-radius: 28px;
+    }
+  
+    .sobre-cta h2 {
+      font-size: 3rem;
+    }
+  
+    .btn-sobre-cta {
+      padding: 14px 44px;
+    }
+  }
+  

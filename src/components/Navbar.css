@@ -8,7 +8,6 @@
 .navbar {
   background-color: #01AA8D;
   font-family: 'dongle';
-  font-size: 2rem;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -36,7 +35,7 @@
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   transition: all 0.3s ease;
   padding: 6px 12px;
   border-radius: 8px;
